@@ -1,3 +1,270 @@
 .home {
-    
+    $h: &;
+    overflow: hidden;
+
+    &__hero {
+        background: url('https://picsum.photos/id/237/1200/1300') no-repeat center center / cover;
+        height: 100vh;
+
+        &__container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        &__title {
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 36px;
+
+            @include mq(md) {
+                font-size: 60px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &__arrow-down {
+            border: 2px solid $white;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            text-decoration: none;
+
+            i {
+                color: $white;
+            }
+        }
+    }
+
+    &__cta {
+        height: 100vh;
+        
+        @include mq(md) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &__container {
+            padding: 10%;
+            display: flex;
+            align-items: flex-end;
+            text-decoration: none;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            height: 50vh;
+
+            @include mq(md) {
+                width: 50%;
+                height: 100vh;
+            }
+
+            img {
+                @include trans;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+
+            &:hover {
+                img {
+                    transform: translate3d(-50%, -50%, 0) scale3d(1.05,1.05,1.05);
+                }
+            }
+        }
+
+        &__title {
+            color: $white;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin: 0;
+            text-decoration: none;
+            z-index: 2;
+        }
+    }
+
+    &__location {
+        
+        @include mq(md) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        &__container {
+            width: 100%;
+            padding: 0 15px;
+
+            @include mq(md) {
+                width: 33.33%;
+                padding: 40px;
+            }
+
+            &--double {
+                height: 0;
+                position: relative;
+                padding-bottom: 100%;
+                margin-bottom: 20px;
+                
+                @include mq(md) {
+                    width: 66.66%;
+                    padding-bottom: 56.5%;
+                    margin-bottom: 0;
+                }
+
+                iframe {
+                    @include trans;
+                    
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    opacity: 0;
+                    
+                    &.-active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin: 0;
+            margin-bottom: 20px;
+            color: $blue;
+            text-transform: uppercase;
+        }
+
+        &__input-wrapper {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            margin-bottom: 20px;
+
+            i {
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &__input {
+            height: 50px;
+            border: none;
+            background: $lightGray;
+            width: 100%;
+            padding-left: 40px;
+            font-size: 14px;
+            border-radius: 3px;
+
+            &::placeholder {
+                font-weight: 900;
+                color: $darkestGray;
+            }
+        }
+
+        &__text {
+            color: $midGray;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 20px;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -60px;
+                width: 150%;
+                height: 1px;
+                background: $lightGray;
+            }
+        }
+
+        &__address {
+            @include trans;
+            display: block;
+            text-decoration: none;
+            padding: 20px 0;
+            cursor: pointer;
+
+            &.-active {
+                background: $blue;
+                padding-left: 20px;
+
+                #{$h}__location {
+                    &__address-title,
+                    &__address-text,
+                    &__subtitle {
+                        color: $white;
+                    }
+                }
+            }
+
+            &:hover {
+                background: $blue;
+                padding-left: 20px;
+
+                #{$h}__location {
+                    &__address-title,
+                    &__address-text,
+                    &__subtitle {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &__address-title {
+            @include trans;
+
+            margin: 0;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        &__address-text {
+            @include trans;
+
+            margin: 0;
+            margin-bottom: 5px;
+            text-decoration: none;
+            outline: none;
+            color: $darkestGray;
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__subtitle {
+            @include trans;
+
+            margin: 10px 0;
+            text-transform: uppercase;
+            color: $midGray;
+            font-size: 14px;
+        }
+    }
 }
