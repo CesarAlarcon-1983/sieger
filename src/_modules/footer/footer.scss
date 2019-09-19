@@ -1,3 +1,148 @@
 .footer {
-    
+    padding: 40px 0;
+
+    &__logos {
+        display: flex;        
+        margin-bottom: 20px;
+
+        @include mq(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo {
+        background: $black;
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    &__links {
+        display: flex;
+        margin-bottom: 20px;
+
+        @include mq(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list {
+        margin-right: 40px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $darkestGray;
+            font-weight: 500;
+        }
+    }
+
+    &__newsletter {
+        &__title {
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        &__text {
+            color: $darkestGray;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &__input-wrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            width: 80%;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            color: $darkestGray;
+            border: none;
+            background: $lightGray;
+            outline: none;
+        }
+
+        &__button {
+            width: 20%;
+            background: $red;
+            border: none;
+            color: $white;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            width: 40%;
+            height: 2px;
+            background: $midGray;
+        }
+
+        &__title {
+            margin: 0;
+            height: 100%;
+            font-size: 16px;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            i {
+                @include trans;
+
+                font-size: 24px;
+                color: $darkestGray;
+            }
+        }
+
+        &__item {
+            @include trans;
+
+            
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $midGray;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                outline: none;
+
+            }
+
+            &:hover {
+                a {
+                    border: 1px solid $darkestGray;
+                }
+
+                i {
+                    color: $blue;
+                }
+            }
+            
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
 }

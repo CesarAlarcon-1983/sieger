@@ -1,0 +1,139 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    main.consejos
+        section.consejos__hero
+            .consejos__hero__slider
+                .consejos__hero__slider-controls
+                    span.arrow-left
+                        i.fa.fa-arrow-left
+                    span.arrow-right
+                        i.fa.fa-arrow-right
+                    .consejos__hero__slider-dots
+                        span
+                        span
+                        span
+                        span
+                .consejos__hero__slide
+                    img(src="https://picsum.photos/id/230/2000/1400")
+                    .container
+                        .row
+                            .col-24
+                                .consejos__hero__content
+                                    h3.consejos__hero__subtitle consejos
+                                    h2.consejos__hero__title ¿con qué frecuencia debo bañarlo?
+                                    button.consejos__hero__button leer consejo
+
+                .consejos__hero__slide
+                    img(src="https://picsum.photos/id/239/2000/1400")
+                    .container
+                        .row
+                            .col-24
+                                .consejos__hero__content
+                                    h3.consejos__hero__subtitle consejos
+                                    h2.consejos__hero__title ¿con qué frecuencia debo bañarlo?
+                                    button.consejos__hero__button leer consejo
+
+                .consejos__hero__slide
+                    img(src="https://picsum.photos/id/238/2000/1400")
+                    .container
+                        .row
+                            .col-24
+                                .consejos__hero__content
+                                    h3.consejos__hero__subtitle consejos
+                                    h2.consejos__hero__title ¿con qué frecuencia debo bañarlo?
+                                    button.consejos__hero__button leer consejo
+
+                .consejos__hero__slide
+                    img(src="https://picsum.photos/id/237/2000/1400")
+                    .container
+                        .row
+                            .col-24
+                                .consejos__hero__content
+                                    h3.consejos__hero__subtitle consejos
+                                    h2.consejos__hero__title ¿con qué frecuencia debo bañarlo?
+                                    button.consejos__hero__button leer consejo
+    section.consejos__list
+        h2.consejos__list__title todos los consejos
+        .consejos__filters
+            .consejos__filters__filter-group
+                input.consejos__filters__filter(type="radio" name="radio" id="radio1")
+                label.consejos__filters__label(for="radio1") todos
+            .consejos__filters__filter-group
+                input.consejos__filters__filter(type="radio" name="radio" id="radio2")
+                label.consejos__filters__label(for="radio2") para perros
+            .consejos__filters__filter-group
+                input.consejos__filters__filter(type="radio" name="radio" id="radio3")
+                label.consejos__filters__label(for="radio3") para gatos
+            .consejos__filters__filter-group
+                select.consejos__filters__select
+                    option(selected hidden disabled) edad
+                    option cachorro
+                    option adulto
+        .consejos__news
+            .consejos__news__new
+                img(src="https://picsum.photos/id/239/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title ¿qué produce el rescado?
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/240/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title ¿con qué frecuencia debo bañarlo?
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/241/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title ¿qué importancia tiene la alimentación en el rascado?
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/242/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title ¿cuándo sacar a pasear a tu cachorro?
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/243/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title consejos para bañar a tu cachorro
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/244/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title ¿las uñas de los perros se deben cortar?
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/252/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title tips a tener en cuenta antes que llegue tu cachorro
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/250/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; senior
+                    h3.consejos__news__new-title tips de cuidado para tu perro mayor de 7 años
+                a.consejos__news__new-button(href="#") leer más
+
+            .consejos__news__new
+                img(src="https://picsum.photos/id/247/2000/1400")
+                .consejos__news__new-wrapper
+                    h4.consejos__news__new-subtitle perros &centerdot; light
+                    h3.consejos__news__new-title ¿qué tener en cuenta para un descenso de peso saludable?
+                a.consejos__news__new-button(href="#") leer más                
