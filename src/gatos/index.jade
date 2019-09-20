@@ -10,51 +10,95 @@ block content
         img(src="/images/gatos/hero.jpg")
     section.gatos__productos
         .gatos__productos__options
-            button.gatos__productos__option
-                p kitten
-            button.gatos__productos__option
-                p Adult
-            button.gatos__productos__option
-                p senior
-            button.gatos__productos__option
-                p urinary
-            button.gatos__productos__option
-                p light
-            button.gatos__productos__option
-                p stress control
+            .gatos__productos__option.-js-supermenu
+                button.gatos__productos__button kitten
+                ul.gatos__productos__sublist
+                    li
+                        .gatos__productos__suboption
+                            button.gatos__productos__subbutton.-js-option estructura normal
+                    li
+                        .gatos__productos__suboption
+                            button.gatos__productos__subbutton.-js-option estructura pequeña
+            .gatos__productos__option.-js-supermenu
+                button.gatos__productos__button Adults
+                ul.gatos__productos__sublist
+                    li
+                        .gatos__productos__suboption
+                            button.gatos__productos__subbutton.-js-option estructura normal
+                    li
+                        .gatos__productos__suboption
+                            button.gatos__productos__subbutton.-js-option estructura pequeña
+            .gatos__productos__option.-js-option
+                button.gatos__productos__button senior
+            .gatos__productos__option.-js-option
+                button.gatos__productos__button urinary
+            .gatos__productos__option.-js-option
+                button.gatos__productos__button light
+            .gatos__productos__option.-js-option
+                button.gatos__productos__button stress control
         .gatos__productos__slider
             .gatos__productos__slider-controls
                 span.arrow-left
                     i.fa.fa-arrow-left
                 span.arrow-right
                     i.fa.fa-arrow-right
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title Kitten
+                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura normal
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="/images/gatos/tabs-bg.jpg")
         
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
+                .gatos__productos__slide-image
+                    img(src="/images/gatos/tabs-product.png")
+                .gatos__productos__slide-container
+                    .gatos__productos__slide-content
+                        h3.gatos__productos__slide-subtitle Productos para gatos 
+                        h2.gatos__productos__slide-title Kitten
+                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura pequeña
+                        p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.gatos__productos__slide-button(href="/producto") conocé más
+                .gatos__productos__slide-container
+                    .gatos__productos__container-image
+                        img(src="/images/gatos/tabs-bg.jpg")
+
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="https://picsum.photos/id/230/1200/1300")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title adult
+                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura normal
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="https://picsum.photos/id/236/1200/1300")
         
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
+                .gatos__productos__slide-image
+                    img(src="https://picsum.photos/id/230/1200/1300")
+                .gatos__productos__slide-container
+                    .gatos__productos__slide-content
+                        h3.gatos__productos__slide-subtitle Productos para gatos 
+                        h2.gatos__productos__slide-title adult
+                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura pequeña
+                        p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.gatos__productos__slide-button(href="/producto") conocé más
+                .gatos__productos__slide-container
+                    .gatos__productos__container-image
+                        img(src="https://picsum.photos/id/236/1200/1300")
+
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="https://picsum.photos/id/230/1200/1300")
                 .gatos__productos__slide-container
@@ -62,12 +106,12 @@ block content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title senior
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="https://picsum.photos/id/236/1200/1300")
         
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="https://picsum.photos/id/230/1200/1300")
                 .gatos__productos__slide-container
@@ -75,12 +119,12 @@ block content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title urinary
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="https://picsum.photos/id/236/1200/1300")
         
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="https://picsum.photos/id/230/1200/1300")
                 .gatos__productos__slide-container
@@ -88,12 +132,12 @@ block content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title light
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="https://picsum.photos/id/236/1200/1300")
                                                                                                 
-            .gatos__productos__slide
+            .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
                     img(src="https://picsum.photos/id/230/1200/1300")
                 .gatos__productos__slide-container
@@ -101,7 +145,7 @@ block content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title stress control
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        button.gatos__productos__slide-button conocé más
+                        a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
                         img(src="https://picsum.photos/id/236/1200/1300")

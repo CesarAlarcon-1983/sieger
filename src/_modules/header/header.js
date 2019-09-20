@@ -6,41 +6,48 @@ var Header = function() {
     var body = $('body');
     var menuOpen = $('.header__hamburguer');
     var menuItems = $('.header__item');
-    var locations = $('.home__location__address');
+    var locations = $('.-js-location');
     var maps = $('iframe');
-    var options = $('.gatos__productos__option');
-    var gatosPageSlides = $('.gatos__productos__slide');
+    var options = $('.-js-option');
+    var slides = $('.-js-slide');
     var consejosPageSlides = $('.consejos__hero__slide');
     var consejosArrowLeft = $('.arrow-left');
     var consejosArrowRight = $('.arrow-right');
-    var gatosArrowLeft = $('.arrow-left');
-    var gatosArrowRight = $('.arrow-right');
+    var arrowLeft = $('.arrow-left');
+    var arrowRight = $('.arrow-right');
     var sliderDots = $('.consejos__hero__slider-dots span');
 
-    function setActiveContent(target, content, index) {
+    function setActiveContent(target, content, index, parents) {
         $(target).removeClass('-active');
         $(content).removeClass('-active');
-
+        
         $(target[index]).addClass('-active');
         $(content[index]).addClass('-active');
+        
+        if($(target[index]).parents('.-js-supermenu').length > 0) {
+            $('.-js-supermenu').removeClass('-active');
+            $(target[index]).parents('.-js-supermenu').addClass('-active');
+        } else if(parents && !$(target[index]).parents('.-js-supermenu').length) {
+            $('.-js-supermenu').removeClass('-active');
+        }
     };
     
     locations.on('click', function() {
         var index = locations.index(this);
-        setActiveContent(locations, maps, index);
+        setActiveContent(locations, maps, index, false);
     })
 
     options.on('click', function() {
         var index = options.index(this);
-        setActiveContent(options, gatosPageSlides, index);
+        setActiveContent(options, slides, index, true);
     })
 
     sliderDots.on('click', function() {
         var index = sliderDots.index(this);
-        setActiveContent(sliderDots, consejosPageSlides, index);
+        setActiveContent(sliderDots, consejosPageSlides, index, false);
     })
 
-    gatosArrowLeft.on('click', function() {
+    arrowLeft.on('click', function() {
         var activeOption = options.filter(function() {
             return $(this).hasClass('-active');
         });
@@ -48,11 +55,11 @@ var Header = function() {
 
         if(index > 0) {
             index--
-            setActiveContent(options, slides, index);
+            setActiveContent(options, slides, index, true);
         }
     })
 
-    gatosArrowRight.on('click', function() {
+    arrowRight.on('click', function() {
         var activeOption = options.filter(function() {
             return $(this).hasClass('-active');
         });
@@ -60,8 +67,9 @@ var Header = function() {
 
         if(index < (options.length - 1)) {
             index++
-            setActiveContent(options, slides, index);
+            setActiveContent(options, slides, index, true);
         }
+
     });
 
     consejosArrowLeft.on('click', function() {
@@ -72,7 +80,7 @@ var Header = function() {
 
         if(index > 0) {
             index--
-            setActiveContent(sliderDots, consejosPageSlides, index);
+            setActiveContent(sliderDots, consejosPageSlides, index, false);
         }
     });
 
@@ -84,7 +92,7 @@ var Header = function() {
 
         if(index < (sliderDots.length - 1)) {
             index++
-            setActiveContent(sliderDots, consejosPageSlides , index);
+            setActiveContent(sliderDots, consejosPageSlides , index, false);
         }
     });
 
@@ -101,9 +109,20 @@ var Header = function() {
         header.removeClass('-js-hovered');
     });
     
-    setActiveContent(locations, maps, 0);
-    setActiveContent(options, gatosPageSlides, 0);
-    setActiveContent(sliderDots, consejosPageSlides, 0);
+    setActiveContent(locations, maps, 0, false);
+    setActiveContent(options, slides, 0, true);
+    setActiveContent(sliderDots, consejosPageSlides, 0, false);
+
+    var header = $('.header');
+
+    function getCurentFileName(){
+        var pagePathName= window.location.pathname;
+        return pagePathName.search('contacto');
+    }
+
+    if(getCurentFileName() === 1) {
+        header.addClass('-contacto');
+    }
 };
 
 module.exports = Header;

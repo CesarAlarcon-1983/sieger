@@ -2,7 +2,67 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
-  p contacto page
+    main.contacto
+        .container
+            .row
+                .col-24.col-md-12
+                    .contacto__image
+                        img(src="/images/contacto/main.jpg")
+                .col-24.col-md-12
+                    form.contacto__form
+                        h2.contacto__form__title contacto
+                        p.contacto__form__text Dejanos tu consulta, inquietud o consejo y nosotros te contestaremos a la brevedad.
+                        .contacto__form__social
+                            p.contacto__form__social-text  Seguinos en nuestras redes:
+                            ul.contacto__form__social-list
+                                li
+                                    a(href="#")
+                                        i.fa.fa-facebook
+                                li
+                                    a(href="#")
+                                        i.fa.fa-instagram
+                        .row
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    input.contacto__form__input(placeholder="Nombre")
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    input.contacto__form__input(placeholder="Apellido")
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    input.contacto__form__input(placeholder="E-mail")
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    input.contacto__form__input(placeholder="Teléfono")
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    select.contacto__form__input
+                                        option(selected hidden disabled) Ciudad
+                                        option Ciudad 1
+                                        option Ciudad 2
+                                        option Ciudad 3
+                            .col-24.col-md-12
+                                .contacto__form__group
+                                    select.contacto__form__input
+                                        option(selected hidden disabled) Provincia
+                                        option Provincia 1
+                                        option Provincia 2
+                                        option Provincia 3
+                            .col-24
+                                .contacto__form__group
+                                    textarea.contacto__form__input.contacto__form__input--textarea(placeholder="Mensaje")
+                            .col-24
+                                .contacto__form__group
+                                    button.contacto__form__button enviar
+                            .col-24
+                                .contacto__info
+                                    h3.contacto__info__title atencion al cliente
+                                    a.contacto__info__text(href="tel:0810 222 0738" target="_blank") 0810 222 0738
+                                    a.contacto__info__text(href="mailto:info@sieger.com.ar" target="_blank") info@sieger.com.ar
+                                    p.contacto__info__text Sieger se comercializa exclusivamente a través de tiendas especializadas.
+                                    p.contacto__info__text 
+                                        |Si querés comercializar nuestros productos, hacé click 
+                                        a(href="https://www.alican.com.ar/adquirir-productos/" target="_blank") acá

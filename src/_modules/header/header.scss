@@ -8,6 +8,67 @@
     width: 100%;
     z-index: 1000;
 
+    &.-contacto {
+        .header__item {
+            a {
+                @include mq(md) {
+                    color: $darkestGray;
+                }
+            }
+            .-dark {
+                opacity: 1;
+            }
+    
+            .-light {
+                opacity: 0;
+            }
+        }
+    
+        .header__logo {
+            .-dark {
+                opacity: 1;
+            }
+    
+            .-light {
+                opacity: 0;
+            }
+        }
+    
+        .header__network {
+            i {
+                color: $blue;
+    
+                @include mq(md) {
+                    color: $darkestGray;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    
+        .header {
+            &.-open {
+                .header__network {
+                    i {
+                        color: $white;
+                    }
+                }
+    
+                .header__logo {
+                    .-dark {
+                        opacity: 0;
+                    }
+                
+                    .-light {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
     &.-js-hovered {
         background: $white;
 

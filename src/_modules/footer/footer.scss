@@ -14,6 +14,13 @@
         height: 100px;
         width: 100px;
         margin-right: 20px;
+
+        &--alican {
+            img {
+                height: 90%;
+                width: auto;
+            }
+        }
     }
 
     &__links {
