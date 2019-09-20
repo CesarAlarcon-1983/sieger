@@ -3,7 +3,7 @@
     overflow: hidden;
 
     &__hero {
-        background: url('https://picsum.photos/id/237/1200/1300') no-repeat center center / cover;
+        background: url('/images/home/hero.jpg') no-repeat center center / cover;
         height: 100vh;
 
         &__container {
@@ -77,6 +77,9 @@
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%, 0);
+
+                width: 100%;
+                height: auto;
             }
 
             &:hover {

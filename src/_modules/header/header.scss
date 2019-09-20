@@ -11,11 +11,26 @@
     &.-js-hovered {
         background: $white;
 
-        #{$h}__item {
-            color: $darkestGray;
+        #{$h}__logo {
+            .-dark {
+                opacity: 1;
+            }
 
-            &:hover {
-                color: $blue;
+            .-light {
+                opacity: 0;
+            }
+        }
+
+        #{$h}__item {
+            a {
+                color: $darkestGray;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $blue;
+                }
+
             }
         }
 
@@ -40,6 +55,27 @@
 
     &__logo {
         z-index: 2000;
+        height: 70px;
+        position: relative;
+        
+        .-dark {
+            opacity: 0;
+        }
+        
+        @include mq(md) {
+            min-width: 250px;
+            height: 100%;
+        }
+
+        img {
+            @include trans;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: auto;
+        }
     }
 
     &__nav {
@@ -84,15 +120,28 @@
         z-index: 2;
         text-transform: uppercase;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        color: $white;
-        font-size: 14px;
         height: 30px;
         
+        a {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            color: $white;
+            text-decoration: none;
+            display: block;
+            line-height: 100px;
+            
+            @include mq(md) {
+                font-size: 12px;
+                height: 100%;
+                line-height: auto;
+            }
+        }
+
         @include mq(md) {
             height: 100%;
         }
+    
         
         &:after {
             @include trans;
@@ -108,6 +157,10 @@
         }
 
         &:hover {
+            a {
+                color: $blue;
+            }
+
             &:after {
                 width: calc(100% - 20px);
             }
@@ -138,8 +191,6 @@
         @include trans;
 
         position: relative;
-        height: 50px;
-        line-height: 50px;
         border-top: 1px solid $lightGray;
         border-right: 1px solid $lightGray;
         border-left: 1px solid $lightGray;
@@ -147,8 +198,15 @@
         text-transform: uppercase;
         min-width: 220px;
         font-weight: 700;
-        color: $darkestGray;
-
+        height: 50px;
+        
+        a {
+            color: $darkestGray;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            text-decoration: none;
+        }
 
         &:nth-child(1),
         &:nth-child(2) {
@@ -173,7 +231,9 @@
         }
 
         &:hover {
-            color: $blue;
+            a {
+                color: $blue;
+            }
 
             &:after {
                 border-right: 1px solid $blue;
@@ -209,7 +269,7 @@
         border-left: 1px solid $lightGray;
         border-right: 1px solid $lightGray;
         color: $darkestGray;
-       
+
         &:hover {
             color: $blue;
         }
