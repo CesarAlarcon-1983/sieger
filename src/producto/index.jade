@@ -7,17 +7,86 @@ block config
 block content
     main.producto
         section.producto__hero
+            img(src="/images/perros/tabs-product.png")
+            .container
+                .row.align-items-end
+                    .col-24.col-md-12
+                        .producto__hero__container
+                            .producto__hero__content
+                                h3.producto__hero__subtitle Piel sensible
+                                h2.producto__hero__title dermaprotect
+                                p.producto__hero__text Sieger dermaprotect está formulado con cordero, una fuente protéica alternativa, que dada su baja alergenicidad, ayuda a minimizar el riesgo de reacciones adversas en el organismo asociadas con la sensibilidad alimentaria, que se manifiesta en la piel o sistema digestivo.
+                                p.producto__hero__text Se puede suministrar a partir de los 12/15 meses de edad.
+                                .producto__hero__wrapper
+                                    h3.producto__hero__wrapper-title presentaciones
+                                    .producto__hero__group
+                                        .producto__hero__weight 3KG
+                                        .producto__hero__weight 5KG
+        section.producto__interstitial
+            .container
+                .row
+                    .col-24
+                        p.producto__interstitial__text 
+                            |A lo largo de su vida, los perros pueden generar una reacción de hipersensibilidad a ciertos alérgenos, presentado sintomas recurrentes en la piel así como también en el sistema digestivo. 
+                            span Seieger dermaprotect 
+                            |está especialmente formulado para prevenir y controlar estos signos de intolerancia alimentaria.
+
+        section.producto__beneficios
+            .container
+                .row
+                    .col-24
+                        h2.producto__beneficios__title beneficios
+                        .producto__beneficios__wrapper
+                            .producto__beneficios__description
+                                each item in site.data.producto
+                                    .producto__beneficios__description-wrapper
+                                        .producto__beneficios__description-icon
+                                            img(src=item.image)
+                                        h3.producto__beneficios__description-title=item.title
+                                        p.producto__beneficios__description-text=item.text
+                            .producto__beneficios__image
+                                span.-js-circle
+                                span.-js-circle
+                                span.-js-circle
+                                span.-js-circle
+                                span.-js-circle
+                                img(src="/images/perros/product/beneficios.jpg")
+                            .producto__beneficios__list
+                                each item in site.data.producto
+                                    .producto__beneficios__list-wrapper
+                                        .producto__beneficios__list-icon
+                                            img(src=item.image)
+                                        p.producto__beneficios__list-text=item.title
+            .producto__beneficios__highlights
+                .container
+                    .row
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Alta digestibilidad nutricional
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Equilibrado balance de vitaminas y minerales
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Óptimo nivel
+
+        section.producto__descipcion
             .container
                 .row
                     .col-24.col-md-12
-                        .producto__hero__container
-                            h3.producto__hero__subtitle Piel sensible
-                            h2.producto__hero__title dermaprotect
-                            p.producto__hero__text 
-                            p.producto__hero__text
-                            .producto__hero__wrapper
-                                h3.producto__hero__wrapper-title presentaciones
-                                .producto__hero__group
-                                    .producto__hero__weight 3KG
-                                    .producto__hero__weight 5KG
+                        .producto__descipcion__guia
+                            h3.producto__descipcion__guia-title
+                            p.producto__descipcion__guia-text
+                            p.producto__descipcion__guia-text
+                            .producto__descipcion__guia-table
+                                .producto__descipcion__col
+                    .col-24.col-md-12
+                        .producto__descipcion__nutricional
 
+                    .col-24

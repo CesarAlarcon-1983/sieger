@@ -123,6 +123,34 @@ var Header = function() {
     if(getCurentFileName() === 1) {
         header.addClass('-contacto');
     }
+
+    //prodcuto logic
+    var beneficioWrapper = $('.producto__beneficios__list-wrapper');
+    var imageCircles = $('.-js-circle');
+    var prodcutDescription = $('.producto__beneficios__description-wrapper');
+    
+
+    beneficioWrapper.on('click', function() {
+        var index = beneficioWrapper.index(this);
+
+        setActiveContent(beneficioWrapper, imageCircles, index, false)
+        setActiveContent(beneficioWrapper, prodcutDescription, index, false)
+
+        console.log(index);
+    })
+
+    imageCircles.on('click', function() {
+        var index = imageCircles.index(this);
+
+        setActiveContent(imageCircles, beneficioWrapper, index, false)
+        setActiveContent(imageCircles, prodcutDescription, index, false)
+
+        console.log(index);
+    })
+
+    setActiveContent(beneficioWrapper, imageCircles, 0, false)
+    setActiveContent(beneficioWrapper, prodcutDescription, 0, false)
+
 };
 
 module.exports = Header;

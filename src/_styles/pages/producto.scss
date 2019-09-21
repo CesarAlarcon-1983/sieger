@@ -1,7 +1,304 @@
 .producto {
+
+    $p: &;
+
     &__hero {
         background: url('/images/perros/product/hero.jpg') no-repeat center center / cover;
         height: 90vh;
         width: 100%;
+        padding-top: 100px;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            z-index: 2;
+        }
+
+        .container,
+        .row {
+            height: 100%;
+        }
+
+        &__container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            overflow: hidden;
+            position: relative;
+            background: $white;
+        }
+
+        &__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 70%;
+            padding-right: 80px;
+        }
+
+        &__subtitle {
+            color: $darkestGray;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            color: $blue;
+            font-size: 40px;
+            margin: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase; 
+        }
+    }
+
+    &__interstitial {
+        padding: 40px 0;
+        background: $lightestGray;
+
+        &__text {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: $darkestGray;
+            width: 90%;
+            
+            @include mq(md) {
+                font-size: 20px;
+                width: 55%;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__beneficios {
+        padding: 40px 0;
+
+        &__title {
+            text-align: center;
+            color: $blue;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 40px;
+        }
+
+        &__wrapper {
+            display: flex;
+        }
+
+        &__description {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 2;
+            position: relative;
+        }
+
+        &__description-wrapper {
+            @include trans;
+
+            padding: 60px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px 1px rgba(0,0,0, .15);
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 100%;
+
+            &.-active {
+                opacity: 1;
+            }
+
+        }
+
+        &__description-icon {
+            img {
+                width: 25%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &__description-title {
+            color: $darkGray;
+            font-weight: 700;
+        }
+
+        &__description-text {
+            color: $midGray;
+            margin-bottom: 0;
+        }
+
+        &__image {
+            width: 50%;
+            height: 0;
+            padding-bottom: 50%;
+            overflow: hidden;
+            position: relative;
+
+            span {
+                @include trans;
+
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 4px solid $darkGray;
+                cursor: pointer;
+
+                &:hover {
+                    border: 4px solid $red + #333;
+                }
+
+
+                &:nth-child(1) {
+                    top: 35%;
+                    left: 30%;
+                }
+
+                &:nth-child(2) {
+                    top: 35%;
+                    left: 56%;
+                }
+
+                &:nth-child(3) {
+                    top: 45%;
+                    left: 42%;
+                }
+
+                &:nth-child(4) {
+                    top: 48%;
+                    left: 70%;
+                }
+
+                &:nth-child(5) {
+                    top: 60%;
+                    left: 88%;
+                }
+
+                &.-active {
+                    border: 4px solid $red;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__list {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 100px;
+        }
+
+        &__list-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+
+            &.-active {
+                #{$p}__beneficios {
+                    &__list-icon {
+                        border: 3px solid $lightYellow;
+                    }
+                    &__list-text {
+                        color: $lightYellow;
+                    }
+                }
+            }
+
+            &:hover {
+                #{$p}__beneficios {
+                    &__list-icon {
+                        border: 3px solid $lightYellow;
+                    }
+                    &__list-text {
+                        color: $lightYellow;
+                    }
+                }
+            }
+        }
+
+        &__list-icon {
+            width: 50px;
+            height: 48.97px;
+            border-radius: 50%;
+            border: 2px solid $white;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 50.4%; 
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: 45px;
+                height: auto;
+            }
+        }
+
+        &__list-text {
+            margin: 0;
+            margin-left: 20px;
+            color: $midGray;
+            width: 50%;
+            font-weight: 500;
+        }
+
+        &__highlights {
+            width: 100%;
+            border-top: 1px solid $red;
+            border-bottom: 1px solid $red;
+            padding: 40px 0;
+        }
+
+        &__highlights-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+        }
+
+        &__highlights-icon {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            
+            i {
+                color: $white;
+                font-size: 28px;
+            }
+        }
+
+        &__highlights-text {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 700;
+            color: $midGray;
+            width: 75%;
+        }
     }
 }

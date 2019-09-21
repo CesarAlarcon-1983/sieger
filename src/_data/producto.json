@@ -1,0 +1,27 @@
+[
+    {
+        "title":"Cordero y arroz",
+        "image":"/images/perros/product/icon1.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible"
+    },
+    {
+        "title":"Salud osteoarticular",
+        "image":"/images/perros/product/icon2.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible"
+    },
+    {
+        "title":"Salud cutanea",
+        "image":"/images/perros/product/icon3.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible"
+    },
+    {
+        "title":"Sistema inmunológico",
+        "image":"/images/perros/product/icon4.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible"
+    },
+    {
+        "title":"Salud digestiva",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible"
+    }
+]
