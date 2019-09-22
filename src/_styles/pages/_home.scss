@@ -80,11 +80,6 @@
 
                 width: 100%;
                 height: auto;
-
-                @include mq(md) {
-                    width: auto;
-                    height: 100%;
-                }
             }
 
             &:hover {
