@@ -2,7 +2,54 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
-  p consejo page
+    main.consejo
+        section.consejo__hero
+
+        section.consejo__content
+            .container
+                .row
+                    .col-24.col-md-14.offset-md-5
+                        h3 perros &centerdot; cachorros
+                        h2 ¿cuando sacar a pasear a tu cachorro?
+                        p Los chachorros requieren de cuidados especiales y el plan sanitario es una parte fundamental de este. El veterinario indicará los pasos a seguir, ¿cuándo realizar las vacunas y desparacitaciones correspondientes?. Y es muy importante que tratemos, en lo posible de respetarlas. De esta manera disminuiremos las probabilidades a posibles enfermedades que pueda contraer.
+                        p Una vez que el cachorro tenga todas las vacunas y desparacitaciones correspondientes a su edad y zona en la que viva, podrá comenzar con sus paseos, lo que es clave para lograr una mejor socialización, no solo con otros perros, sino también con otras personas. De las buenas experiencias que haya tenido dependera su personalidad a futuro.
+                        p Lograr una socialización temprana es un proceso de suma importancia que evitará que el perro sea miedoso y agresivo.
+                        p Al principio los paseos deben ser cortos, mostrales de a poco diferentes lugares y gente para que adquiera confianza. Luego ir sumando el contacto a través del juego con otros perros.
+                        p Debemos siempre respetar los tiempos de cada cachorro, habrá algunos que les será mas fácil la adaptación y otros que necesitarán de más tiempo. Dedicarle tiempo, darle mucho afecto, atención y cuidado es la premisa para que en su adultez sea un perro con un temperamento equilibrado.
+
+                        .consejo__social
+                            .consejo__social__text compartir
+                            ul.consejo__social__list
+                                li
+                                    a
+                                        i.fa.fa-facebook-official
+                                li
+                                    a
+                                        i.fa.fa-twitter
+
+        section.consejo__consejos
+            .consejo__consejos__new
+                img(src="/images/consejos/sample1.jpg")
+                .consejo__consejos__new-wrapper
+                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
+                    h3.consejo__consejos__new-title ¿qué produce el rescado?
+                a.consejo__consejos__new-button(href="#") leer más
+
+            .consejo__consejos__new
+                img(src="/images/consejos/sample2.jpg")
+                .consejo__consejos__new-wrapper
+                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
+                    h3.consejo__consejos__new-title ¿qué produce el rescado?
+                a.consejo__consejos__new-button(href="#") leer más
+
+            .consejo__consejos__new
+                img(src="/images/consejos/sample3.jpg")
+                .consejo__consejos__new-wrapper
+                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
+                    h3.consejo__consejos__new-title ¿qué produce el rescado?
+                a.consejo__consejos__new-button(href="#") leer más
+
+
