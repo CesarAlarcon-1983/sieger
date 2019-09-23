@@ -57,7 +57,6 @@ var Header = function() {
         $('.perros__productos__sublist').removeClass('-active');
 
         e.stopPropagation();
-        $(this).focus('.gatos__productos__slide-subtitle');
     })
 
     sliderDots.on('click', function() {
