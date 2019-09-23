@@ -57,6 +57,11 @@ var Header = function() {
         $('.perros__productos__sublist').removeClass('-active');
 
         e.stopPropagation();
+        
+        if($(target[index]).parents('.-js-supermenu').length > 0) {
+            $(this).clone(true).insertAfter($(this));
+            $(this).remove();
+        }
     })
 
     sliderDots.on('click', function() {
