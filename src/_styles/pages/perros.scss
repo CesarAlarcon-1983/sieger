@@ -71,7 +71,11 @@
                 .perros__productos__sublist {
                     opacity: 1;
                     pointer-events: all;
-                    z-index: -1;
+                    z-index: 2;
+                    
+                    @include mq(md) {
+                        z-index: -1;
+                    }
                 }
             }
 
@@ -83,14 +87,42 @@
         }
 
         &__sublist {
+            @include trans;
+
+            z-index: 2;
             position: absolute;
-            top: 49px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
             opacity: 0;
             pointer-events: none;
             background: $white;
+            top: 200px;
+            width: 100vw;
+            left: 0;
+
+            @include mq(md) {
+                top: 50px;
+                transform: translateX(-50%);
+                width: 110%;
+                left: 50%;
+                z-index: -1;
+            }
+
+            &.-active {
+                opacity: 1;
+                pointer-events: all;
+                z-index: 2;
+
+                @include mq(md) {
+                    z-index: -1;
+                }
+            }
+
+            &--xs-positioning {
+                left: -100%;
+                
+                @include mq(md) {
+                    left: 50%;
+                }
+            }
         }
 
         &__subbutton {
@@ -107,6 +139,7 @@
             position: relative;
             width: 100%;
             height: 100vh;
+            overflow: hidden;
 
             @include mq(md) {
                 height: 50vw;
@@ -161,15 +194,17 @@
             left: 0;
             width: 100%;
             opacity: 0;
-            
+            z-index: -1;
+            height: 100%;
+
             @include mq(md) {
                 display: flex;
                 flex-wrap: nowrap;
-
             }
 
             &.-active {
                 opacity: 1;
+                z-index: 1;
             }
         }
 
@@ -183,7 +218,8 @@
             
             @include mq(md) {
                 width: 50%;
-                height: auto;
+                min-height: auto;
+                height: 100%;
             }
             
             img {
@@ -191,6 +227,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%,  0);
+                height: 100%;
+                width: auto;
             }
         }
 
@@ -235,20 +273,23 @@
         &__slide-subtitle {
             margin: 0;
             margin-bottom: 5px;
-            font-size: 16px;
+            font-size: 14px;
             color: $darkestGray;
+
+            @include mq(md) {
+                font-size: 16px;
+            }
         }
 
         &__slide-title {
             margin: 0;
-            font-size: 50px;
+            margin-bottom: 10px;
             color: $blue;
             text-transform: uppercase;
+            font-size: 30px;
             
-            &--small {
-                margin-bottom: 10px;
-                font-size: 28px;
-                white-space: nowrap;
+            @include mq(md) {
+                font-size: 40px;
             }
         }
 
@@ -276,7 +317,7 @@
             width: 100%;
 
             @include mq(md) {
-                width: 50%;
+                width: 60%;
             }
 
             &:after {
@@ -299,7 +340,8 @@
             width: 100%;
             padding-bottom: 100%;
             overflow: hidden;
-            position: relative;
+            position: absolute;
+            top: 0;
 
             img {
                 position: absolute;
@@ -313,96 +355,21 @@
     }
 
     &__consejos {
-        height: auto;
+        z-index: 2000;
 
         @include mq(md) {
-            display: flex;
-            flex-wrap: nowrap;
-            height: 200px;
-        }
-
-        &__consejo {
-            width: 100%;
-            background: $lightGray;
-            padding: 20px 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             position: relative;
-            overflow: hidden;
-            height: 33.33vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        &__container {
+            width: 100%;
+            margin-bottom: 1px;
 
             @include mq(md) {
-                height: 100%;
-                padding: 40px;
                 width: 33.33%;
-            }
-
-            &--image {
-                justify-content: flex-end;
-                background: $black;
-
-                .gatos__consejos__consejo-subtitle,
-                .gatos__consejos__consejo-title {
-                    color: $white;
-                }
-
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate3d(-50%, -50%, 0);
-                    width: 100%;
-                    height: auto;
-                    opacity: .7;
-                }
-            }
-        }
-
-        &__consejo-subtitle {
-            color: $darkestGray;
-            font-size: 16px;
-            margin: 0;
-            margin-bottom: 10px;
-            z-index: 2;
-        }
-
-        &__consejo-title {
-            color: $blue;
-            margin: 0;
-            text-transform: uppercase;
-            z-index: 2;
-        }
-
-        &__consejo-button {
-            color: $black;
-            display: inline-block;
-            text-transform: uppercase;
-            position: relative;
-            font-size: 14px;
-            font-weight: 700;
-            width: 30%;
-
-            &:hover {
-                &:after {
-                    border-left: 6px solid $blue;
-                }
-            }
-
-            &:after {
-                @include trans;
-
-                position: absolute;
-                content: '';
-                height: 0;
-                width: 0;
-                border-left: 6px solid $black;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid transparent;
-                border-top: 6px solid transparent;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 0;
+                margin-bottom: 0;
             }
         }
     }

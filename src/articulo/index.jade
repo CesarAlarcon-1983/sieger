@@ -1,14 +1,15 @@
 extends ../_layouts/base
 
+include ../_modules/consejo/consejo
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../';
 
 block content
-    main.consejo
-        section.consejo__hero
+    main.articulo
+        section.articulo__hero
 
-        section.consejo__content
+        section.articulo__content
             .container
                 .row
                     .col-24.col-md-14.offset-md-5
@@ -20,9 +21,9 @@ block content
                         p Al principio los paseos deben ser cortos, mostrales de a poco diferentes lugares y gente para que adquiera confianza. Luego ir sumando el contacto a través del juego con otros perros.
                         p Debemos siempre respetar los tiempos de cada cachorro, habrá algunos que les será mas fácil la adaptación y otros que necesitarán de más tiempo. Dedicarle tiempo, darle mucho afecto, atención y cuidado es la premisa para que en su adultez sea un perro con un temperamento equilibrado.
 
-                        .consejo__social
-                            .consejo__social__text compartir
-                            ul.consejo__social__list
+                        .articulo__social
+                            .articulo__social__text compartir
+                            ul.articulo__social__list
                                 li
                                     a
                                         i.fa.fa-facebook-official
@@ -30,26 +31,10 @@ block content
                                     a
                                         i.fa.fa-twitter
 
-        section.consejo__consejos
-            .consejo__consejos__new
-                img(src="/images/consejos/sample1.jpg")
-                .consejo__consejos__new-wrapper
-                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
-                    h3.consejo__consejos__new-title ¿qué produce el rescado?
-                a.consejo__consejos__new-button(href="#") leer más
-
-            .consejo__consejos__new
-                img(src="/images/consejos/sample2.jpg")
-                .consejo__consejos__new-wrapper
-                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
-                    h3.consejo__consejos__new-title ¿qué produce el rescado?
-                a.consejo__consejos__new-button(href="#") leer más
-
-            .consejo__consejos__new
-                img(src="/images/consejos/sample3.jpg")
-                .consejo__consejos__new-wrapper
-                    h4.consejo__consejos__new-subtitle perros &centerdot; senior
-                    h3.consejo__consejos__new-title ¿qué produce el rescado?
-                a.consejo__consejos__new-button(href="#") leer más
-
-
+        section.articulo__consejos
+            .articulo__consejos__container
+                +consejo('/images/consejos/sample1.jpg', 'perros · senior', '¿qué produce el rescado?')
+            .articulo__consejos__container
+                +consejo('/images/consejos/sample2.jpg', 'perros · senior', '¿qué produce el rescado?')
+            .articulo__consejos__container
+                +consejo('/images/consejos/sample3.jpg', 'perros · senior', '¿qué produce el rescado?')

@@ -12,6 +12,9 @@ header.header
                                 li.header__item
                                     a.header__link(href=item.url)=item.name
                                     if item.sublist
+                                        a.header__link-mobile(href="#")
+                                            i.fa.fa-plus
+                                    if item.sublist
                                         ul.header__sublist
                                             each element in item.sublist
                                                 li.header__subitem

@@ -4,17 +4,27 @@
 
     &__hero {
         background: url('/images/perros/product/hero.jpg') no-repeat center center / cover;
-        height: 90vh;
+        // height: 90vh;
         width: 100%;
-        padding-top: 100px;
         position: relative;
+        padding-top: 50%;
+
+        @include mq(md) {
+            padding-top: 200px;
+        }
 
         img {
             position: absolute;
-            bottom: 50px;
+            top: calc(50% + 100px);
             left: 50%;
-            transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, -50%, 0);
             z-index: 2;
+            display: none;
+            width: 22%;
+
+            @include mq(md) {
+                display: block;
+            }
         }
 
         .container,
@@ -24,34 +34,82 @@
 
         &__container {
             width: 100%;
-            height: 0;
-            padding-bottom: 100%;
-            overflow: hidden;
-            position: relative;
             background: $white;
+            
+            @include mq(md) {
+                height: 0;
+                padding-bottom: 100%;
+                overflow: hidden;
+                position: relative;
+
+            }
         }
 
         &__content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate3d(-50%, -50%, 0);
-            width: 70%;
-            padding-right: 80px;
+            padding: 20px;
+
+            @include mq(md) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: 70%;
+                padding-right: 80px;
+
+            }
         }
 
         &__subtitle {
             color: $darkestGray;
             margin: 0;
             margin-bottom: 10px;
+            font-size: 14px;
+
+            @include mq(md) {
+                font-size: 16px;
+            }
         }
 
         &__title {
             color: $blue;
-            font-size: 40px;
+            font-size: 24px;
             margin: 0;
             margin-bottom: 20px;
             text-transform: uppercase; 
+            position: relative;
+            z-index: 3;
+
+            @include mq(md) {
+                font-size: 36px;
+            }
+        }
+
+        &__wrapper-title {
+            color: $midGray - #333;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 5px;
+
+            @include mq(md) {
+                font-size: 14px;
+            }
+        }
+
+        &__group {
+            display: flex;
+        }
+
+        &__weight {
+            margin-right: 10px;
+            padding-right: 10px;
+            font-size: 22px;
+            font-weight: 700;
+            color: $midGray - #333;
+
+            &:first-child {
+                border-right: 1px solid $midGray - #333;
+            }
         }
     }
 
@@ -382,6 +440,14 @@
 
             &--italic {
                 font-style: italic;
+            }
+        }
+
+        &__table {
+            overflow-x: auto;
+
+            @include mq(md) {
+                overflow-x: visible;
             }
         }
     }

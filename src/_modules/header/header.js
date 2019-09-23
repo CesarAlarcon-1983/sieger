@@ -37,9 +37,27 @@ var Header = function() {
         setActiveContent(locations, maps, index, false);
     })
 
-    options.on('click', function() {
+    $('.-js-supermenu').on('click', function() {
+        $('.-js-supermenu').removeClass('-active');
+        $(options).removeClass('-active');
+        $(this).addClass('-active');
+        $('.gatos__productos__sublist').removeClass('-active');
+        $('.perros__productos__sublist').removeClass('-active');
+        $(this).children('.gatos__productos__sublist').addClass('-active');
+        $(this).children('.perros__productos__sublist').addClass('-active');
+    }) 
+
+    options.on('click', function(e) {
         var index = options.index(this);
+
+        $('.-js-supermenu').removeClass('-active');
         setActiveContent(options, slides, index, true);
+        $(this).parent('.-js-supermenu').addClass('-active');
+        $('.gatos__productos__sublist').removeClass('-active');
+        $('.perros__productos__sublist').removeClass('-active');
+
+        e.stopPropagation();
+        $(this).focus('.gatos__productos__slide-subtitle');
     })
 
     sliderDots.on('click', function() {
@@ -135,8 +153,6 @@ var Header = function() {
 
         setActiveContent(beneficioWrapper, imageCircles, index, false);
         setActiveContent(beneficioWrapper, prodcutDescription, index, false);
-
-        console.log(index);
     })
 
     imageCircles.on('click', function() {
@@ -144,8 +160,6 @@ var Header = function() {
 
         setActiveContent(imageCircles, beneficioWrapper, index, false);
         setActiveContent(imageCircles, prodcutDescription, index, false);
-
-        console.log(index);
     })
 
     setActiveContent(beneficioWrapper, imageCircles, 0, false);

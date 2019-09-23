@@ -1,5 +1,7 @@
 extends ../_layouts/base
 
+include ../_modules/consejo/consejo
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../';
@@ -21,7 +23,7 @@ block content
                             button.gatos__productos__subbutton.-js-option estructura pequeña
             .gatos__productos__option.-js-supermenu
                 button.gatos__productos__button Adults
-                ul.gatos__productos__sublist
+                ul.gatos__productos__sublist.gatos__productos__sublist--xs-positioning
                     li
                         .gatos__productos__suboption
                             button.gatos__productos__subbutton.-js-option estructura normal
@@ -49,7 +51,7 @@ block content
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title Kitten
-                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura normal
+                        h2.gatos__productos__slide-title estructura normal
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
@@ -63,7 +65,7 @@ block content
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title Kitten
-                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura pequeña
+                        h2.gatos__productos__slide-title estructura pequeña
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
@@ -72,12 +74,12 @@ block content
 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title adult
-                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura normal
+                        h2.gatos__productos__slide-title estructura normal
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
@@ -86,12 +88,12 @@ block content
         
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
                         h2.gatos__productos__slide-title adult
-                        h2.gatos__productos__slide-title.gatos__productos__slide-title--small estructura pequeña
+                        h2.gatos__productos__slide-title estructura pequeña
                         p.gatos__productos__slide-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         a.gatos__productos__slide-button(href="/producto") conocé más
                 .gatos__productos__slide-container
@@ -100,7 +102,7 @@ block content
 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
@@ -113,7 +115,7 @@ block content
         
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
@@ -126,7 +128,7 @@ block content
         
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
@@ -139,7 +141,7 @@ block content
                                                                                                 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="https://picsum.photos/id/230/1200/1300")
+                    img(src="/images/gatos/tabs-product.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
                         h3.gatos__productos__slide-subtitle Productos para gatos 
@@ -151,19 +153,12 @@ block content
                         img(src="https://picsum.photos/id/236/1200/1300")
     
     section.gatos__consejos
-        .gatos__consejos__consejo
-            .gatos__consejos__consejo-wrapper
-                h4.gatos__consejos__consejo-subtitle Consejos
-                h3.gatos__consejos__consejo-title consejos para el primer día en casa
-            a.gatos__consejos__consejo-button leer más
-        .gatos__consejos__consejo.gatos__consejos__consejo--image
-            img(src="https://picsum.photos/id/232/1200/1300")
-            h4.gatos__consejos__consejo-subtitle Consejos
-            h3.gatos__consejos__consejo-title ¿es común que se le caigan los dientes?
-        .gatos__consejos__consejo.gatos__consejos__consejo--image
-            img(src="https://picsum.photos/id/231/1200/1300")
-            h4.gatos__consejos__consejo-subtitle Consejos
-            h3.gatos__consejos__consejo-title ¿las uñas deben cortarse?
+        .gatos__consejos__container
+            +consejo('/images/consejos/sample1.jpg', 'Consejos', 'consejos para el primer día en casa')
+        .gatos__consejos__container
+            +consejo('/images/consejos/sample2.jpg', 'Consejos', 'consejos para el primer día en casa')
+        .gatos__consejos__container
+            +consejo('/images/consejos/sample3.jpg', 'Consejos', 'consejos para el primer día en casa')
     
     section.gatos__location#location
         .gatos__location__container.gatos__location__container--double
@@ -177,21 +172,21 @@ block content
                 input.gatos__location__input(placeholder="Dirección, Ciudad, Código Postal")
             p.gatos__location__text cerca tuyo
             .gatos__location__addresses
-                a.gatos__location__address(href="#location")
+                a.gatos__location__address.-js-location(href="#location")
                     h3.gatos__location__address-title san jorge
                     p.gatos__location__address-text Emilio Mitre 232, Villa Sarmiento
                     p.gatos__location__address-text Buenos Aires
                     p.gatos__location__address-text 4464 2432
                     h4.gatos__location__subtitle horario de atención
                     p.gatos__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.gatos__location__address(href="#location")
+                a.gatos__location__address.-js-location(href="#location")
                     h3.gatos__location__address-title como perros y gatos
                     p.gatos__location__address-text Chacabuco 589, Retiro
                     p.gatos__location__address-text Buenos Aires
                     p.gatos__location__address-text 4464 2432
                     h4.gatos__location__subtitle horario de atención
                     p.gatos__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.gatos__location__address(href="#location")
+                a.gatos__location__address.-js-location(href="#location")
                     h3.gatos__location__address-title ferreriro hermanos
                     p.gatos__location__address-text Emilio Mitre 232, Puerto Madero
                     p.gatos__location__address-text CABA
