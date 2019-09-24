@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 3000;
 
     &.-contacto {
         .header__item {
@@ -148,6 +148,14 @@
                     @include mq(md) {
                         color: $blue;
                     }
+                }
+            }
+        }
+
+        #{$h}__subitem {
+            a{
+                @include mq(md) {
+                    line-height: 50px;
                 }
             }
         }
@@ -349,6 +357,7 @@
         top: 0;
         right: 0;
         width: 50px;
+        z-index: 1000;
 
         @include mq(md) {
             display: none !important;
@@ -415,7 +424,7 @@
 
                 position: absolute;
                 top: 20px;
-                right: 20px;
+                right: 25px;
                 width: 10px;
                 height: 10px;
                 border-right: 1px solid $white;

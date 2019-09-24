@@ -16,17 +16,14 @@ var Header = function() {
     var arrowLeft = $('.arrow-left');
     var arrowRight = $('.arrow-right');
     var sliderDots = $('.consejos__hero__slider-dots span');
-    var headerLinks = $('.header__item a');
+    var headerLinks = $('.-js-link');
 
     headerLinks.on('click', function() {
         header.removeClass('-open');
         body.removeClass('-hideOverflow');
-
     })
 
     $(window).on('scroll', function() {
-        
-
         if($(window).scrollTop() > 10) {
             header.addClass('-js-scrolled');
         } else {

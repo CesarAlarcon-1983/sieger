@@ -10,7 +10,7 @@ header.header
                         ul.header__list
                             each item in site.data.header
                                 li.header__item
-                                    a.header__link(href=item.url)=item.name
+                                    a.header__link.-js-link(href=item.url)=item.name
                                     if item.sublist
                                         a.header__link-mobile(href="#")
                                             i.fa.fa-plus
@@ -18,12 +18,12 @@ header.header
                                         ul.header__sublist
                                             each element in item.sublist
                                                 li.header__subitem
-                                                    a(href=element.url)=element.name    
+                                                    a.-js-link(href=element.url)=element.name    
                                                     if element.subsublist
                                                         ul.header__subsublist
                                                             each link in element.subsublist
-                                                                li.header__subsubitem
-                                                                    a(href=link.url)=link.name
+                                                                li.header__subsubitem.-js-link
+                                                                    a.-js-link(href=link.url)=link.name
                     .header__social-wrapper
                         ul.header__social
                             li.header__network
