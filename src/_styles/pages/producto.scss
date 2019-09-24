@@ -4,13 +4,16 @@
 
     &__hero {
         background: url('/images/perros/product/hero.jpg') no-repeat center center / cover;
-        // height: 90vh;
         width: 100%;
         position: relative;
         padding-top: 50%;
 
         @include mq(md) {
             padding-top: 200px;
+        }
+
+        &--gatos {
+            background: url('/images/gatos/product/hero.jpg') no-repeat center center / cover;
         }
 
         img {
@@ -267,6 +270,36 @@
                 &.-active {
                     border: 4px solid $red;
                 }
+
+            }
+
+            &--gatos {
+                a{
+                    &:nth-child(1) {
+                        top: 25%;
+                        left: 36%;
+                    }
+    
+                    &:nth-child(2) {
+                        top: 37%;
+                        left: 60%;
+                    }
+    
+                    &:nth-child(3) {
+                        top: 45%;
+                        left: 32%;
+                    }
+    
+                    &:nth-child(4) {
+                        top: 48%;
+                        left: 50%;
+                    }
+    
+                    &:nth-child(5) {
+                        top: 83%;
+                        left: 40%;
+                    }
+                }
             }
 
             img {
@@ -322,6 +355,31 @@
                         color: $lightYellow;
                     }
                 }
+            }
+
+            &--gatos {
+                &.-active {
+                    #{$p}__beneficios {
+                        &__list-icon--gatos {
+                            border: 3px solid $red;
+                        }
+                        &__list-text--gatos {
+                            color: $red;
+                        }
+                    }
+                }
+    
+                &:hover {
+                    #{$p}__beneficios {
+                        &__list-icon--gatos {
+                            border: 3px solid $red;
+                        }
+                        &__list-text--gatos {
+                            color: $red;
+                        }
+                    }
+                }
+    
             }
         }
 
@@ -453,157 +511,21 @@
     }
 
     &__consejos {
+        z-index: 2000;
+
         @include mq(md) {
+            position: relative;
             display: flex;
             flex-wrap: wrap;
-            position: relative;
         }
-
-
-        &__new {
-            @include trans;
-
-            height: 250px;
-            overflow: hidden;
-            position: relative;
-            padding: 40px 0;
-            display: flex;
-            flex-direction: column;
-            background: $black;
-            margin-bottom: 1px;
-            justify-content: space-between;
-
-            @include mq(md) {
-                justify-content: flex-end;
-                width: 33.33%;
-                margin-bottom: 0;
-            }
-
-            img {
-                @include trans;
-                
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate3d(-50%, -50%, 0);
-                opacity: .5;
-                width: 100%;
-                height: auto;
-            }
-
-            &:hover {
-                @include mq(md) {
-                    background: $lightGray;
-                    justify-content: space-between;
-                }
-
-                .consejos__news__new-wrapper {
-                    @include mq(md) {
-                        top: 40px;
-                        bottom: auto;
-                    }
-                }
-
-                .consejos__news__new-subtitle {
-                    @include mq(md) {
-                        color: $darkestGray;
-                    }
-                }
-
-                .consejos__news__new-title {
-                    @include mq(md) {
-                        color: $blue;
-                    }
-                }
-
-                .consejos__news__new-button {
-                    @include mq(md) {
-                        opacity: 1;
-                        bottom: 40px;
-                    }
-                }
-
-                img {
-                    @include mq(md) {
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-
-        &__new-wrapper {
-            @include trans;
-
-            padding: 0 40px;
-            top: auto;
-            z-index: 2;
-            
-            @include mq(md) {
-                position: absolute;
-                width: 100%;
-                bottom: 40px;
-
-            }
-        }
-
-        &__new-subtitle {
-            color: $white;
-            text-transform: uppercase;
-            margin: 0;
-            margin-bottom: 10px;
-        }
-
-        &__new-title {
-            text-transform: uppercase;
-            font-size: 24px;
-            margin: 0;
-            color: $white;
-        }
-
-        &__new-button {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;
-            padding-left: 40px;
-            z-index: 2;
-            position: relative;
-            width: 50%;
-            color: $white;
-            
-            @include mq(md) {
-                color: $darkestGray;
-                display: block;
-                opacity: 0;
-                position: absolute;
-                bottom: -100%;            
-                left: 40px;
-                padding-left: 0;
-                width: auto;
-            }
-
-            &:after {
-                position: absolute;
-                content: '';
-                height: 0;
-                width: 0;
-                border-left: 6px solid $white;
-                border-right: 6px solid transparent;
-                border-bottom: 6px solid transparent;
-                border-top: 6px solid transparent;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 10px;
-
-                @include mq(md) {
-                    right: -40px;
-                    border-left: 6px solid $darkestGray;
-                }
-            }
-        }
-    }
-
-    &--gatos {
         
+        &__container {
+            width: 100%;
+
+            @include mq(md) {
+                width: 33.33%;
+            }
+        }
     }
 }
 

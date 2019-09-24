@@ -396,11 +396,9 @@
         
         &__container {
             width: 100%;
-            margin-bottom: 1px;
 
             @include mq(md) {
                 width: 33.33%;
-                margin-bottom: 0;
             }
         }
     }

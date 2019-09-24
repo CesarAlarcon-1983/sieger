@@ -1,12 +1,14 @@
 extends ../_layouts/base
 
+include ../_modules/consejo/consejo
+
 block config
   //- Correct base url pathing for this page
   - var baseUrl = '../';
 
 block content
     main.producto.producto--perros
-        section.producto__hero
+        section.producto__hero.producto--perros__hero
             img(src="/images/perros/tabs-product.png")
             .container
                 .row.align-items-end
@@ -38,18 +40,18 @@ block content
                         h2.producto__beneficios__title beneficios
                         .producto__beneficios__wrapper
                             .producto__beneficios__description
-                                each item in site.data.producto
+                                each item in site.data.productoPerros
                                     .producto__beneficios__description-wrapper
                                         .producto__beneficios__description-icon
                                             img(src=item.image)
                                         h3.producto__beneficios__description-title=item.title
                                         p.producto__beneficios__description-text=item.text
                             .producto__beneficios__image
-                                each item in site.data.producto
+                                each item in site.data.productoPerros
                                     a(href="#beneficios").-js-circle
                                 img(src="/images/perros/product/beneficios.jpg")
                             .producto__beneficios__list
-                                each item in site.data.producto
+                                each item in site.data.productoPerros
                                     a(href="#beneficios").producto__beneficios__list-wrapper
                                         .producto__beneficios__list-icon
                                             img(src=item.image)
@@ -205,24 +207,9 @@ block content
                         .producto__descripcion__text Harina de cordero, arroz precocido, maíz precocido, gluten meal, aceite de pollo (fuente de Omega 6), saborizante natural: hidrolizado de menudencias porcinas y aviares, pulpa de remolacha, aceite de pescado (fuente de Omega 3), cloruro de sodio, fructo-oligosacáridos (FOS), colina, L-lisina, DL-Metionina, carbonato de calcio, fosfato monodicálcico, extracto de yucca, antioxidantes naturales (eucalipto, orégano, thymol), betaina, glucosamina, mananoologosacáridos (MOS), condroitín sulfato, vitamina E, antifúngico (propionato de amonio), treonina, sulfato de hierro, metionina de zinc, sulfato de zinc, vitamina C, sulfato de cobre, taurina, nicotinamida, pantotenato de calcio, sulfato manganoso, vitamina A, vitamina B2, vitamina B6, vitamina D3, vitamina B1, vitamina K3, biotina, ácido fólico, vitamina B12, bicarbonato de sodio, iodato de calcio, selenio organico, selenito de sodio.
 
         section.producto__consejos
-            .producto__consejos__new
-                img(src="/images/consejos/sample1.jpg")
-                .producto__consejos__new-wrapper
-                    h4.producto__consejos__new-subtitle perros &centerdot; senior
-                    h3.producto__consejos__new-title ¿qué produce el rescado?
-                a.producto__consejos__new-button(href="#") leer más
-
-            .producto__consejos__new
-                img(src="/images/consejos/sample2.jpg")
-                .producto__consejos__new-wrapper
-                    h4.producto__consejos__new-subtitle perros &centerdot; senior
-                    h3.producto__consejos__new-title ¿qué produce el rescado?
-                a.producto__consejos__new-button(href="#") leer más
-
-            .producto__consejos__new
-                img(src="/images/consejos/sample3.jpg")
-                .producto__consejos__new-wrapper
-                    h4.producto__consejos__new-subtitle perros &centerdot; senior
-                    h3.producto__consejos__new-title ¿qué produce el rescado?
-                a.producto__consejos__new-button(href="#") leer más
-
+            .producto__consejos__container
+                +consejo('/images/consejos/sample1.jpg', 'Consejos', 'que produce el rascado')
+            .producto__consejos__container
+                +consejo('/images/consejos/sample2.jpg', 'Consejos', 'con qué frecuencia debo bañarlo')
+            .producto__consejos__container
+                +consejo('/images/consejos/sample3.jpg', 'Consejos', 'qué importancia tiene la alimentación en el rascado')
