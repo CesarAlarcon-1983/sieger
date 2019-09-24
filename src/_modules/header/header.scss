@@ -3,7 +3,7 @@
     $h: &;
     @include trans;
     
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -108,7 +108,59 @@
         }
     }
 
+    &.-js-scrolled {
+        background: $white;
+
+        #{$h}__container,
+        #{$h}__nav,
+        #{$h}__list {
+            @include mq(md) {
+                height: 70px;
+            }
+        }
+
+        #{$h}__logo {
+            .-dark {
+                opacity: 1;
+            }
+
+            .-light {
+                opacity: 0;
+            }
+        }
+
+        #{$h}__item {
+            &:after {
+                @include mq(md) {
+                    bottom: 20px;
+                }
+            }
+        
+            a {
+                @include mq(md) {
+                    line-height: 70px;
+                    color: $darkestGray;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    @include mq(md) {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        #{$h}__network {
+            i {
+                color: $darkestGray;
+            }
+        }
+    }
+
     &__container {
+        @include trans;
         display: flex;
         align-items: center;
         padding: 20px 0;
@@ -121,6 +173,7 @@
     }
 
     &__logo {
+        @include trans;
         z-index: 2000;
         height: 70px;
         position: relative;
@@ -326,7 +379,7 @@
         @include trans;
 
         position: relative;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 700;
         height: 0;
         overflow: hidden;
@@ -354,7 +407,8 @@
         }
 
         &:nth-child(1),
-        &:nth-child(2) {
+        &:nth-child(2),
+        &:nth-child(3) {
             &:after {
                 content: '';
                 @include trans;
@@ -564,8 +618,25 @@
             }
         }
 
+        #{$h}__logo {
+            .-dark {
+                opacity: 0;
+            }
+
+            .-light {
+                opacity: 1;
+            }
+        }
+
         #{$h}__nav {
             transform: translateX(0);
+
+        }
+
+        #{$h}__network {
+            i {
+                color: $white;
+            }
         }
     }
 }

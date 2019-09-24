@@ -1,0 +1,228 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    main.producto.producto--perros
+        section.producto__hero
+            img(src="/images/perros/tabs-product.png")
+            .container
+                .row.align-items-end
+                    .col-24.col-md-12
+                        .producto__hero__container
+                            .producto__hero__content
+                                h3.producto__hero__subtitle Piel sensible
+                                h2.producto__hero__title dermaprotect
+                                p.producto__hero__text Sieger dermaprotect está formulado con cordero, una fuente protéica alternativa, que dada su baja alergenicidad, ayuda a minimizar el riesgo de reacciones adversas en el organismo asociadas con la sensibilidad alimentaria, que se manifiesta en la piel o sistema digestivo.
+                                p.producto__hero__text Se puede suministrar a partir de los 12/15 meses de edad.
+                                .producto__hero__wrapper
+                                    h3.producto__hero__wrapper-title presentaciones
+                                    .producto__hero__group
+                                        span.producto__hero__weight 3KG
+                                        span.producto__hero__weight 5KG
+        section.producto__interstitial
+            .container
+                .row
+                    .col-24
+                        p.producto__interstitial__text 
+                            |A lo largo de su vida, los perros pueden generar una reacción de hipersensibilidad a ciertos alérgenos, presentado sintomas recurrentes en la piel así como también en el sistema digestivo. 
+                            span Seieger dermaprotect 
+                            |está especialmente formulado para prevenir y controlar estos signos de intolerancia alimentaria.
+
+        section.producto__beneficios#beneficios
+            .container
+                .row
+                    .col-24
+                        h2.producto__beneficios__title beneficios
+                        .producto__beneficios__wrapper
+                            .producto__beneficios__description
+                                each item in site.data.producto
+                                    .producto__beneficios__description-wrapper
+                                        .producto__beneficios__description-icon
+                                            img(src=item.image)
+                                        h3.producto__beneficios__description-title=item.title
+                                        p.producto__beneficios__description-text=item.text
+                            .producto__beneficios__image
+                                each item in site.data.producto
+                                    a(href="#beneficios").-js-circle
+                                img(src="/images/perros/product/beneficios.jpg")
+                            .producto__beneficios__list
+                                each item in site.data.producto
+                                    a(href="#beneficios").producto__beneficios__list-wrapper
+                                        .producto__beneficios__list-icon
+                                            img(src=item.image)
+                                        p.producto__beneficios__list-text=item.title
+            .producto__beneficios__highlights
+                .container
+                    .row
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Alta digestibilidad nutricional
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Equilibrado balance de vitaminas y minerales
+                        .col-24.col-md-8
+                            .producto__beneficios__highlights-wrapper
+                                .producto__beneficios__highlights-icon
+                                    i.fa.fa-check
+                                p.producto__beneficios__highlights-text Óptimo nivel
+
+        section.producto__descripcion
+            .container
+                .row
+                    .col-24.col-md-12
+                        .producto__descripcion__container
+                            h3.producto__descripcion__title guía de alimentación
+                            p.producto__descripcion__text Racionamiento mínimo sugerido (gramos por día) (*)
+                            p.producto__descripcion__text.producto__descripcion__text--italic Minimun rationing suggested (gramms per day) (*)
+                            .producto__descripcion__table
+                                table.table
+                                    tbody
+                                        tr
+                                            td.table__header.table__text--top.table__text--top--left(scope="col" rowspan="2")
+                                                |Actividad del perro
+                                                br
+                                                span Dog´s activity
+                                            td.table__header.table__header--alt.table__text--top.table__text--top--right(scope="col" colspan="7")
+                                                |Peso del perro / 
+                                                span Dog´s weight
+                                        tr
+                                            th.table__text(scope="col") 5 kg
+                                            th.table__text(scope="col") 6-9 kg
+                                            th.table__text(scope="col") 10-20 kg
+                                            th.table__text(scope="col") 21-30 kg
+                                            th.table__text(scope="col") 31-40 kg
+                                            th.table__text(scope="col") 41-50 kg
+                                            th.table__text.table__text--bottom--right(scope="col") +51 kg
+                                        tr
+                                            td.table__header.table__text--top--left(scope="col") 
+                                                |Moderada
+                                                br
+                                                span Moderate
+                                            td.table__text(scope="col") 
+                                                |55 -
+                                                br
+                                                |110 g
+                                            td.table__text(scope="col")
+                                                |120 -
+                                                br
+                                                |170 g
+                                            td.table__text(scope="col")
+                                                |190 -
+                                                br
+                                                |300 g
+                                            td.table__text(scope="col")
+                                                |320 -
+                                                br
+                                                |400 g
+                                            td.table__text(scope="col")
+                                                |420 -
+                                                br
+                                                |500 g
+                                            td.table__text(scope="col")
+                                                |510 -
+                                                br
+                                                |550 g
+                                            td.table__text.table__text--bottom--right(scope="col") 570 g
+                                        tr
+                                            td.table__header.table__text--bottom.table__text--bottom--left(scope="col") 
+                                                |Intensiva
+                                                br
+                                                span Intensive
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |70 -
+                                                br
+                                                |130 g
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |150 -
+                                                br
+                                                |200 g
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |220 -
+                                                br
+                                                |350 g
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |375 -
+                                                br
+                                                |450 g
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |470 -
+                                                br
+                                                |550 g
+                                            td.table__text.table__text--bottom(scope="col")
+                                                |560 -
+                                                br
+                                                |600 g
+                                            td.table__text.table__text--bottom.table__text--bottom--right(scope="col") 650 g
+
+                            p.producto__descripcion__text (*) Una taza equivale a 100 g de alimento balanceado
+                            p.producto__descripcion__text.producto__descripcion__text--italic (*) One cup is equivalent to 100 g of balanced food
+                    .col-24.col-md-12
+                        .producto__descripcion__container
+                            h3.producto__descripcion__title guía de alimentación
+
+                            table.table
+                                tbody
+                                    tr.table__row
+                                        td.table__title parametros
+                                        td.table__title valor
+                                    tr.table__row
+                                        td.table__description Proteina cruda (min.)
+                                        td.table__description.table__description--dark 28.0 %
+                                    tr.table__row
+                                        td.table__description Extracto etéreo (min.)
+                                        td.table__description.table__description--dark 14.0%
+                                    tr.table__row
+                                        td.table__description Fibra cruda (min.)
+                                        td.table__description.table__description--dark 4.0%
+                                    tr.table__row
+                                        td.table__description Humedad (min.)
+                                        td.table__description.table__description--dark 10%
+                                    tr.table__row
+                                        td.table__description Calcio (min.)
+                                        td.table__description.table__description--dark 1.3%
+                                    tr.table__row
+                                        td.table__description Calcio (max.)
+                                        td.table__description.table__description--dark 1.6%
+                                    tr.table__row
+                                        td.table__description Fósforo (min.)
+                                        td.table__description.table__description--dark 0.9%
+                                    tr.table__row
+                                        td.table__description Fósforo (max.)
+                                        td.table__description.table__description--dark 1.3%
+                                    tr.table__row
+                                        td.table__description Energía metabolizable
+                                        td.table__description.table__description--dark 4000 kcal/kg
+
+                    .col-24
+                        h3.producto__descripcion__title ingredientes
+                        .producto__descripcion__text Harina de cordero, arroz precocido, maíz precocido, gluten meal, aceite de pollo (fuente de Omega 6), saborizante natural: hidrolizado de menudencias porcinas y aviares, pulpa de remolacha, aceite de pescado (fuente de Omega 3), cloruro de sodio, fructo-oligosacáridos (FOS), colina, L-lisina, DL-Metionina, carbonato de calcio, fosfato monodicálcico, extracto de yucca, antioxidantes naturales (eucalipto, orégano, thymol), betaina, glucosamina, mananoologosacáridos (MOS), condroitín sulfato, vitamina E, antifúngico (propionato de amonio), treonina, sulfato de hierro, metionina de zinc, sulfato de zinc, vitamina C, sulfato de cobre, taurina, nicotinamida, pantotenato de calcio, sulfato manganoso, vitamina A, vitamina B2, vitamina B6, vitamina D3, vitamina B1, vitamina K3, biotina, ácido fólico, vitamina B12, bicarbonato de sodio, iodato de calcio, selenio organico, selenito de sodio.
+
+        section.producto__consejos
+            .producto__consejos__new
+                img(src="/images/consejos/sample1.jpg")
+                .producto__consejos__new-wrapper
+                    h4.producto__consejos__new-subtitle perros &centerdot; senior
+                    h3.producto__consejos__new-title ¿qué produce el rescado?
+                a.producto__consejos__new-button(href="#") leer más
+
+            .producto__consejos__new
+                img(src="/images/consejos/sample2.jpg")
+                .producto__consejos__new-wrapper
+                    h4.producto__consejos__new-subtitle perros &centerdot; senior
+                    h3.producto__consejos__new-title ¿qué produce el rescado?
+                a.producto__consejos__new-button(href="#") leer más
+
+            .producto__consejos__new
+                img(src="/images/consejos/sample3.jpg")
+                .producto__consejos__new-wrapper
+                    h4.producto__consejos__new-subtitle perros &centerdot; senior
+                    h3.producto__consejos__new-title ¿qué produce el rescado?
+                a.producto__consejos__new-button(href="#") leer más
+

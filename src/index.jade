@@ -3,6 +3,7 @@ extends _layouts/base
 block content
     main.home
         section.home__hero
+            iframe(src="https://www.youtube.com/embed/eIgechoHobA?autoplay=1&playlist=eIgechoHobA&loop=1&controls=0&mute=1&showinfo=0")
             .container
                 .row
                     .col-24.col-md-10.offset-md-1
@@ -17,22 +18,20 @@ block content
                                 i.fa.fa-arrow-down
         section.home__cta#cta
             a.home__cta__container(href="/perros")
-                img(src="/images/home/perros-cta.jpg")
                 h2.home__cta__title.wow.fadeInLeft
                     |tengo
                     br
                     |un perro
             a.home__cta__container(href="/gatos")
-                img(src="/images/home/gatos-cta.jpg")
                 h2.home__cta__title.wow.fadeInRight
                     |tengo
                     br
                     |un gato
         section.home__location#location
             .home__location__container.home__location__container--double
-                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.687208327099!2d-58.57069318423594!3d-34.63734396678619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f0dfd44655%3A0xec70ba61af8cf308!2sEmilio%20Mitre%20232%2C%20B1707AMF%20Villa%20Sarmiento%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1568825980657!5m2!1ses-419!2sar")
-                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.555277989878!2d-58.37641601224866!3d-34.61540553430556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5c05ca985%3A0x58ed0e3e91c74dc8!2sChacabuco%20589%2C%20C1069AAK%20CABA!5e0!3m2!1ses-419!2sar!4v1568759145139!5m2!1ses-419!2sar")
-                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.195475960974!2d-58.44543478423624!3d-34.62450016610618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca39cd8f9d9b%3A0x907923965b494413!2sEmilio%20Mitre%20232%2C%20C1424AYF%20CABA!5e0!3m2!1ses-419!2sar!4v1568826041578!5m2!1ses-419!2sar")
+                iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.687208327099!2d-58.57069318423594!3d-34.63734396678619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f0dfd44655%3A0xec70ba61af8cf308!2sEmilio%20Mitre%20232%2C%20B1707AMF%20Villa%20Sarmiento%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1568825980657!5m2!1ses-419!2sar")
+                iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.555277989878!2d-58.37641601224866!3d-34.61540553430556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5c05ca985%3A0x58ed0e3e91c74dc8!2sChacabuco%20589%2C%20C1069AAK%20CABA!5e0!3m2!1ses-419!2sar!4v1568759145139!5m2!1ses-419!2sar")
+                iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.195475960974!2d-58.44543478423624!3d-34.62450016610618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca39cd8f9d9b%3A0x907923965b494413!2sEmilio%20Mitre%20232%2C%20C1424AYF%20CABA!5e0!3m2!1ses-419!2sar!4v1568826041578!5m2!1ses-419!2sar")
             .home__location__container
                 h2.home__location__title donde comprar
                 .home__location__input-wrapper

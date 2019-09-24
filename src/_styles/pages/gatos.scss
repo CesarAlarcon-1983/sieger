@@ -3,21 +3,30 @@
     $g: &;
 
     &__hero {
-        height: 0;
+        height: 50vh;
         width: 100vw;
-        padding-bottom: 56.5%;
         overflow: hidden;
         position: relative;
-        background: $black;
+        background: url('/images/gatos/hero.jpg') no-repeat center center / cover;
         
-        img {
+        @include mq(md) {
+            padding-bottom: 56.5%;
+            height: 0;
+        }
+
+        iframe {
+            display: none;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate3d(-50%, -50%,  0);
-            width: 100%;
-            height: auto;
-            opacity: .7;
+            width: 110%;
+            height: 110%;
+            pointer-events: none;
+
+            @include mq(md) {
+                display: block;
+            }
         }
     }
 
@@ -125,6 +134,14 @@
                 
                 @include mq(md) {
                     left: 50%;
+                }
+            }
+
+            &--xs-top-positioning {
+                top: 100px;
+
+                @include mq(md) {
+                    top: 50px;
                 }
             }
         }
@@ -450,7 +467,7 @@
             border-radius: 3px;
 
             &::placeholder {
-                font-weight: 900;
+                font-weight: 700;
                 color: $darkestGray;
             }
         }

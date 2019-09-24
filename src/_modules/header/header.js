@@ -7,7 +7,7 @@ var Header = function() {
     var menuOpen = $('.header__hamburguer');
     var menuItems = $('.header__item');
     var locations = $('.-js-location');
-    var maps = $('iframe');
+    var maps = $('.-js-map');
     var options = $('.-js-option');
     var slides = $('.-js-slide');
     var consejosPageSlides = $('.consejos__hero__slide');
@@ -16,6 +16,23 @@ var Header = function() {
     var arrowLeft = $('.arrow-left');
     var arrowRight = $('.arrow-right');
     var sliderDots = $('.consejos__hero__slider-dots span');
+    var headerLinks = $('.header__item a');
+
+    headerLinks.on('click', function() {
+        header.removeClass('-open');
+        body.removeClass('-hideOverflow');
+
+    })
+
+    $(window).on('scroll', function() {
+        
+
+        if($(window).scrollTop() > 10) {
+            header.addClass('-js-scrolled');
+        } else {
+            header.removeClass('-js-scrolled');
+        }
+    })
 
     function setActiveContent(target, content, index, parents) {
         $(target).removeClass('-active');
@@ -57,8 +74,8 @@ var Header = function() {
         $('.perros__productos__sublist').removeClass('-active');
 
         e.stopPropagation();
-        
-        if($(target[index]).parents('.-js-supermenu').length > 0) {
+
+        if($(this).parents('.-js-supermenu').length > 0) {
             $(this).clone(true).insertAfter($(this));
             $(this).remove();
         }
@@ -85,6 +102,7 @@ var Header = function() {
         var activeOption = options.filter(function() {
             return $(this).hasClass('-active');
         });
+
         var index = options.index(activeOption);
 
         if(index < (options.length - 1)) {
@@ -169,6 +187,13 @@ var Header = function() {
     setActiveContent(beneficioWrapper, imageCircles, 0, false);
     setActiveContent(beneficioWrapper, prodcutDescription, 0, false);
 
+    var viewport = 0; 
+    if($(window).width() < 640) {
+        viewport = 110;
+    } else {
+        viewport = 70;
+    } 
+
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')
@@ -187,8 +212,12 @@ var Header = function() {
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
+                if(viewport > 640) {
+
+                }
+
                 $('html, body').animate({
-                    scrollTop: target.offset().top + 0
+                        scrollTop: target.offset().top - viewport
                 }, 1000, function() {
                 // Callback after animation
                 // Must change focus!
@@ -198,6 +227,7 @@ var Header = function() {
             }
         }
     });
+    console.log($(window).width())
 };
 
 module.exports = Header;
