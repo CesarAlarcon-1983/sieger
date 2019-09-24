@@ -31,6 +31,9 @@
     }
 
     &__productos {
+      background: $white;
+      position: relative;
+
         &__options {
             display: flex;
             flex-wrap: wrap;
@@ -372,6 +375,9 @@
     }
 
     &__consejos {
+      background: $white;
+      position: relative;
+
         @include mq(md) {
             display: flex;
             flex-wrap: wrap;
@@ -388,6 +394,8 @@
     }
 
     &__location {
+      background: $white;
+      position: relative;
         
         @include mq(md) {
             display: flex;
