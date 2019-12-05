@@ -6,65 +6,71 @@
             {
                 "name":"cachorros",
                 "subsublist": [
-                    {
-                        "name":"estructura pequeña",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
-                    }
+                  {
+                    "name":"Estructura Pequeña",
+                    "url":"/producto-perro/cachorro-mordida-pequena"
+                  },
+                  {
+                      "name":"estructura mediana y grande",
+                      "url":"/producto-perro/cachorro"
+                  }                   
                 ]
             },
             {
                 "name":"adultos",
                 "subsublist": [
                     {
-                        "name":"estructura pequeña",
-                        "url":"#"
+                      "name":"Estructura Pequeña",
+                      "url":"/producto-perro/adulto-mordida-pequena"
                     },
                     {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
-                    }
+                        "name":"estructura mediana y grande",
+                        "url":"/producto-perro/adulto"
+                    }                    
                 ]
             },
             {
-                "name":"senior +7 años",
+                "name":"senior",
                 "subsublist": [
+                  {
+                    "name":"Estructura Pequeña",
+                    "url":"/producto-perro/senior-mordida-pequena"
+                },
                     {
-                        "name":"estructura pequeña",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
+                        "name":"estructura mediana y grande",
+                        "url":"/producto-perro/senior"
                     }
+                    
                 ]
             },
             {
-                "name":"light"
+                "name":"light",
+                "url":"/producto-perro/light"
             },
             {
-                "name":"dermaprotect"
+                "name":"dermaprotect",
+                "url":"/producto-perro/dermaprotect"
             },
             {
-                "name":"criadores"
+                "name":"criadores",
+                "url":"/producto-perro/criadores"
             },
             {
-                "name":"sieger ultra"
+                "name":"Sieger Ultra",
+                "subsublist": [
+                  {
+                    "name":"Vita Plus",
+                    "url":"/producto-perro/ultra-vita-plus"
+                  },
+                  {
+                    "name":"Osteoarticular",
+                    "url":"/producto-perro/ultra-osteoarticular"
+                  },
+                  {
+                    "name":"Mash Puppy’s",
+                    "url":"/producto-perro/ultra-mash-puppy"
+                  }
+                ]
             }
         ]
     },
@@ -74,63 +80,27 @@
         "sublist": [
             {
                 "name":"kitten",
-                "subsublist": [
-                    {
-                        "name":"estructura pequeña",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
-                    }
-                ]
+                "url":"/producto-gato/kitten"
             },
             {
-                "name":"adultos",
-                "subsublist": [
-                    {
-                        "name":"estructura pequeña",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
-                    }
-                ]
+                "name":"adult",
+                "url":"/producto-gato/adult"
             },
             {
                 "name":"senior",
-                "subsublist": [
-                    {
-                        "name":"estructura pequeña",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura mediana",
-                        "url":"#"
-                    },
-                    {
-                        "name":"estructura grande",
-                        "url":"#"
-                    }
-                ]
+                "url":"/producto-gato/senior"
             },
             {
-                "name":"urinary"
+                "name":"urinary",
+                "url":"/producto-gato/urinary"
             },
             {
-                "name":"light"
+                "name":"light",
+                "url":"/producto-gato/light"
             },
             {
-                "name":"stress control"
+                "name":"stress control",
+                "url":"/producto-gato/stress-control"
             }
         ]
     },
@@ -139,7 +109,7 @@
         "url":"/consejos"
     },
     {
-        "name":"donde comprar",
+        "name":"dónde comprar",
         "url":"/#location"
     },
     {

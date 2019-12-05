@@ -17,8 +17,8 @@
         iframe {
             display: none;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 45.5%;
+            left: 54%;
             transform: translate3d(-50%, -50%,  0);
             width: 110%;
             height: 110%;
@@ -42,6 +42,25 @@
                 display: none;
             }
         }
+
+        &__arrow-down {
+          border: 2px solid $white;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          outline: none;
+          text-decoration: none;
+          position: absolute;
+          bottom: 20%;
+          right: 20%;
+
+            i {
+                color: $white;
+            }
+        }
       }
 
     &__productos {
@@ -60,7 +79,6 @@
 
         &__button,
         &__subbutton {
-            line-height: 50px;
             margin: 0;
             text-transform: uppercase;
             color: $white;
@@ -280,6 +298,8 @@
                 display: block;
             }
 
+            
+
             img {
                 position: absolute;
                 height: auto;
@@ -287,6 +307,12 @@
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%,  0);
+            }
+
+            &--box {
+              img {
+                width: 80%;
+              }
             }
         }
 
@@ -319,10 +345,15 @@
             margin-bottom: 10px;
             color: $blue;
             text-transform: uppercase;
-            font-size: 30px;
+            font-size:28px;
+            line-height: 0.9;
             
             @include mq(md) {
-                font-size: 40px;
+                font-size: 36px;
+            }
+
+            span {
+              font-size: 0.6em;
             }
         }
 
@@ -518,6 +549,7 @@
             padding: 20px 0;
             cursor: pointer;
 
+            &:hover,
             &.-active {
                 background: $blue;
                 padding-left: 20px;
@@ -527,19 +559,10 @@
                     &__address-text,
                     &__subtitle {
                         color: $white;
-                    }
-                }
-            }
 
-            &:hover {
-                background: $blue;
-                padding-left: 20px;
-
-                #{$g}__location {
-                    &__address-title,
-                    &__address-text,
-                    &__subtitle {
-                        color: $white;
+                        a {
+                          color: $white;
+                        }
                     }
                 }
             }
@@ -565,6 +588,10 @@
             font-size: 14px;
             font-weight: 500;
             display: block;
+
+            i {
+              margin-right: 5px;
+            }
 
             &:last-child {
                 margin-bottom: 0;

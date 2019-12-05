@@ -9,12 +9,14 @@ block config
 block content
     main.producto.producto--gatos
         section.producto__hero.producto__hero--gatos
-            img(src="/images/gatos/tabs-product.png")
+            img(src="/images/packs/katze-kitten.png")
             .container
                 .row.align-items-end
                     .col-24.col-md-12
                         .producto__hero__container
-                            .producto__hero__content
+                           
+                             a.producto__hero__back(href="/perros")
+                             .producto__hero__content
                                 h3.producto__hero__subtitle Hasta 12 meses
                                 h2.producto__hero__title kitten
                                 p.producto__hero__text Sieger dermaprotect está formulado con cordero, una fuente protéica alternativa, que dada su baja alergenicidad, ayuda a minimizar el riesgo de reacciones adversas en el organismo asociadas con la sensibilidad alimentaria, que se manifiesta en la piel o sistema digestivo.
@@ -49,7 +51,7 @@ block content
                             .producto__beneficios__image.producto__beneficios__image--gatos
                                 each item in site.data.productoGatos
                                     a(href="#beneficios").-js-circle
-                                img(src="/images/gatos/product/benefits.jpg")
+                                img(src="/images/gatos/product/beneficios-katze.jpg")
                             .producto__beneficios__list
                                 each item in site.data.productoGatos
                                     a(href="#beneficios").producto__beneficios__list-wrapper.producto__beneficios__list-wrapper--gatos
@@ -73,7 +75,7 @@ block content
                             .producto__beneficios__highlights-wrapper
                                 .producto__beneficios__highlights-icon
                                     i.fa.fa-check
-                                p.producto__beneficios__highlights-text Óptimo nivel
+                                p.producto__beneficios__highlights-text Óptimo nivel energético
 
         section.producto__descripcion
             .container
@@ -167,7 +169,7 @@ block content
                             p.producto__descripcion__text.producto__descripcion__text--italic (*) One cup is equivalent to 100 g of balanced food
                     .col-24.col-md-12
                         .producto__descripcion__container
-                            h3.producto__descripcion__title guía de alimentación
+                            h3.producto__descripcion__title Tabla de Contenido Nutricional
 
                             table.table
                                 tbody

@@ -9,45 +9,20 @@ block config
 block content
  main.gatos
     section.gatos__hero
-        iframe(src="https://www.youtube.com/embed/roXI-ZIkHxo?autoplay=1&playlist=roXI-ZIkHxo&loop=1&controls=0&mute=1&showinfo=0")
-    section.gatos__productos
+        iframe(src="https://www.youtube.com/embed/uhPJUG7bpss?autoplay=1&controls=0&loop=1&mute=1&playlist=uhPJUG7bpss&showinfo=0&modestbranding=1&autohide=1")
+        a.gatos__hero__arrow-down(href="#productos") 
+            i.fa.fa-arrow-down
+    section.gatos__productos#productos
         .gatos__productos__options
-            .gatos__productos__option.-js-supermenu
+            .gatos__productos__option.-js-option
                 button.gatos__productos__button kitten
-                ul.gatos__productos__sublist
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura pequeña
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura mediana
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura grande
-            .gatos__productos__option.-js-supermenu
-                button.gatos__productos__button Adults
-                ul.gatos__productos__sublist.gatos__productos__sublist--xs-positioning
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura pequeña
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura mediana
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura grande
-            .gatos__productos__option.-js-supermenu
+                
+            .gatos__productos__option.-js-option
+                button.gatos__productos__button Adult
+                
+            .gatos__productos__option.-js-option
                 button.gatos__productos__button senior
-                ul.gatos__productos__sublist.gatos__productos__sublist--xs-top-positioning
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura pequeña
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura mediana
-                    li
-                        .gatos__productos__suboption
-                            button.gatos__productos__subbutton.-js-option estructura grande
+                
             .gatos__productos__option.-js-option
                 button.gatos__productos__button urinary
             .gatos__productos__option.-js-option
@@ -55,167 +30,88 @@ block content
             .gatos__productos__option.-js-option
                 button.gatos__productos__button stress control
         .gatos__productos__slider
-            .gatos__productos__slider-controls
-                span.arrow-left
-                    i.fa.fa-arrow-left
-                span.arrow-right
-                    i.fa.fa-arrow-right
+            //- .gatos__productos__slider-controls
+            //-     span.arrow-left
+            //-         i.fa.fa-arrow-left
+            //-     span.arrow-right
+            //-         i.fa.fa-arrow-right
 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-kitten.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Kitten <br> estructura pequeña
+                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Alimento para gatos 
+                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Kitten
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/kitten" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image.wow.fadeInRight
-                        img(src="/images/gatos/tabs-bg.jpg")
-        
+                        img(src="/images/gatos/tabs-bg-katze-kitten.jpg")
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-adult.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Kitten <br> estructura mediana
+                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Alimento para gatos 
+                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adult
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/adult" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
-                    .gatos__productos__container-image.wow.fadeInRight
-                        img(src="/images/gatos/tabs-bg.jpg")
+                    .gatos__productos__container-image
+                        img(src="/images/gatos/tabs-bg-katze-adult.jpg")
 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-senior.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Kitten <br> estructura grande
+                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Alimento para gatos 
+                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/senior" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
+                        img(src="/images/gatos/tabs-bg-katze-senior.jpg")
 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-urinary.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adult <br> estructura pequeña
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-        
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adult <br> estructura mediana
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adult <br> estructura grande
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior <br> estructura pequeña
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-        
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior <br> estructura mediana
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
-                        h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior <br> estructura grande
-                        p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button(href="/producto-gato" data-wow-delay=".6s") conocé más
-                .gatos__productos__slide-container
-                    .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
-
-            .gatos__productos__slide.-js-slide
-                .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
-                .gatos__productos__slide-container
-                    .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
+                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Alimento para gatos 
                         h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") urinary
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/urinary" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/gatos/tabs-bg-katze-urinary.jpg")
         
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-light.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Productos para gatos 
+                        h3.gatos__productos__slide-subtitle.wow.fadeInLeft Alimento para gatos 
                         h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") light
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/light" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/gatos/tabs-bg-katze-light.jpg")
                                                                                                 
             .gatos__productos__slide.-js-slide
                 .gatos__productos__slide-image
-                    img(src="/images/gatos/tabs-product.png")
+                    img(src="/images/packs/katze-stress.png")
                 .gatos__productos__slide-container
                     .gatos__productos__slide-content
-                        h3.gatos__productos__slide-subtitle Productos para gatos 
+                        h3.gatos__productos__slide-subtitle Alimento para gatos 
                         h2.gatos__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") stress control
                         p.gatos__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato" data-wow-delay=".6s") conocé más
+                        a.gatos__productos__slide-button.wow.fadeInLeft(href="/producto-gato/stress-control" data-wow-delay=".6s") conocé más
                 .gatos__productos__slide-container
                     .gatos__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/gatos/tabs-bg-katze-stress-control.jpg")
     
     section.gatos__consejos
         .gatos__consejos__container
@@ -231,30 +127,42 @@ block content
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.555277989878!2d-58.37641601224866!3d-34.61540553430556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5c05ca985%3A0x58ed0e3e91c74dc8!2sChacabuco%20589%2C%20C1069AAK%20CABA!5e0!3m2!1ses-419!2sar!4v1568759145139!5m2!1ses-419!2sar")
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.195475960974!2d-58.44543478423624!3d-34.62450016610618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca39cd8f9d9b%3A0x907923965b494413!2sEmilio%20Mitre%20232%2C%20C1424AYF%20CABA!5e0!3m2!1ses-419!2sar!4v1568826041578!5m2!1ses-419!2sar")
         .gatos__location__container
-            h2.gatos__location__title donde comprar
+            h2.gatos__location__title dónde comprar
             .gatos__location__input-wrapper
                 i.fa.fa-search
                 input.gatos__location__input(placeholder="Dirección, Ciudad, Código Postal")
             p.gatos__location__text cerca tuyo
             .gatos__location__addresses
-                a.gatos__location__address.-js-location(href="#location")
+                .gatos__location__address.-js-location(href="#location")
                     h3.gatos__location__address-title san jorge
                     p.gatos__location__address-text Emilio Mitre 232, Villa Sarmiento
                     p.gatos__location__address-text Buenos Aires
                     p.gatos__location__address-text 4464 2432
+                    p.gatos__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.gatos__location__subtitle horario de atención
                     p.gatos__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.gatos__location__address.-js-location(href="#location")
-                    h3.gatos__location__address-title como perros y gatos
+                .gatos__location__address.-js-location(href="#location")
+                    h3.gatos__location__address-title como gatos y gatos
                     p.gatos__location__address-text Chacabuco 589, Retiro
                     p.gatos__location__address-text Buenos Aires
                     p.gatos__location__address-text 4464 2432
+                    p.gatos__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.gatos__location__subtitle horario de atención
                     p.gatos__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.gatos__location__address.-js-location(href="#location")
+                .gatos__location__address.-js-location(href="#location")
                     h3.gatos__location__address-title ferreriro hermanos
                     p.gatos__location__address-text Emilio Mitre 232, Puerto Madero
                     p.gatos__location__address-text CABA
                     p.gatos__location__address-text 4464 2432
+                    p.gatos__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.gatos__location__subtitle horario de atención
                     p.gatos__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs

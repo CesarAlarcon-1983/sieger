@@ -1,27 +1,159 @@
-[   
-    {
-        "title":"L-Lisina",
-        "image":"/images/gatos/product/icon1.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    },
-    {
-        "title":"Salud osteoarticular",
-        "image":"/images/gatos/product/icon2.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    },
-    {
-        "title":"Salud cutanea",
-        "image":"/images/gatos/product/icon3.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    },
-    {
-        "title":"Sistema inmunológico",
-        "image":"/images/gatos/product/icon4.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    },
-    {
-        "title":"Salud digestiva",
-        "image":"/images/gatos/product/icon5.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    }
-]
+{
+  "kitten": [
+      {
+          "title":"Mayor protección inmunológica",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo. "
+      },
+      {
+          "title":"Desarrollo cognitivo",
+          "image":"/images/gatos/product/icon3.png",
+          "text":"El DHA ayuda a estimular el desarrollo del cerebro y la retina, además de promover el proceso de aprendizaje. "
+      },
+      {
+          "title":"Músculos fuertes y sanos",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que ayudan a desarrollar una masa muscular más fuerte."
+      },
+      {
+          "title":"Salud cutánea",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria."
+      },
+      {
+          "title":"Vitalidad celular",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"El complejo sinérgico Vitaminas E y C + Selenio Orgánico genera una potente acción antioxidante que disminuye el estrés celular del organismo."
+      }
+  ],
+  "adult": [
+      {
+          "title":"Protección del tracto urinario",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"Combinacióon de nutrientes especialmente seleccionados para proteger las vías urinarias de los gatos adultos."
+      },
+      {
+          "title":"Seguridad digestiva",
+          "image":"/images/gatos/product/icon3.png",
+          "text":"La inclusión de prebióticos MOS y FOS optimiza la absorción de nutrientes y contribuye a mantener un tracto intestinal saludable"
+      },
+      {
+          "title":"Control de bolas de pelo",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Aporta fibras naturales que ayudan a la eliminación de las bolas de pelo y a regular el tránsito intestinal."
+      },
+      {
+          "title":"Salud cutánea",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria."
+      },
+      {
+          "title":"Vitalidad celular",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"El complejo sinérgico Vitaminas E y C + Selenio Orgánico genera una potente acción antioxidante que disminuye el estrés celular del organismo."
+      }
+    ],
+    "senior": [
+      {
+          "title":"Salud osteoarticular",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"La Glucosamina y el Condroitín Sulfato mantienen las articulaciones y los huesos del gato adulto mayor de 7 años fuertes y sanos."
+      },
+      {
+          "title":"Vitalidad celular",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"El complejo sinérgico Vitaminas E y C + Selenio Orgánico genera una potente acción antioxidante que disminuye el estrés celular del organismo."
+      },
+      {
+          "title":"Óptima actividad cerebral ",
+          "image":"/images/gatos/product/icon3.png",
+          "text":"Aporta vitaminas del complejo B, vitales para el correcto funcionamiento de todo el organismo. Estimula el sistema nervioso, cardiovascular y el metabolismo. "
+      },
+      {
+          "title":"Músculos fuertes y sanos",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que generan una masa muscular más fuerte."
+      },
+      {
+          "title":"Transformación de grasa en energía",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"La L-Carnitina favorece la utilización de los ácidos grasos como fuente de energía, disminuyendo la formación de tejido adiposo."
+      }
+    ],
+    "urinary": [
+      {
+          "title":"Control del pH urinario",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"Contiene nutrientes que ayudan a controlar el pH urinario, previenen la formación de cristales de estruvita y promueven la salud de las vías urinarias. "
+      },
+      {
+          "title":"Músculos fuertes",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Formulado especialmente con proteínas de alta digestibilidad, colabora en la formación de músculos sanos y fuertes. "
+      },
+      {
+          "title":"Control de bolas de pelo",
+          "image":"/images/gatos/product/icon3.png",
+          "text":"Ofrece la cantidad ideal de fibras naturales y prebióticos que favorecen la salud intestinal, optimizan la absorción de nutrientes y ayudan a eliminar las bolas de pelo. "
+      },
+      {
+          "title":"Salud cutánea",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+      },
+      {
+          "title":"Vitalidad celular ",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Debido a su acción antioxidante, el complejo sinérgico Vitamina C + Selenio Orgánico ayuda a retardar los signos del envejecimiento. "
+      }
+    ],
+    "light": [
+      {
+          "title":"Óptimo metabolismo de las grasas",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"La inclusión de L-Carnitina favorece la utilización de los ácidos grasos como fuente de energía, disminuyendo la formación de tejido adiposo."
+      },
+      {
+          "title":"Saciedad prolongada",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Contiene fibras naturales que aumentan la saciedad, disminuyendo la ingesta calórica, y favorecen la eliminación de las bolas de pelo.  "
+      },
+      {
+          "title":"Salud cutánea",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+      },
+      {
+          "title":"Vitalidad celular ",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Debido a su acción antioxidante, el complejo sinérgico Vitamina C + Selenio Orgánico ayuda a retardar los signos del envejecimiento. "
+      }
+    ],
+    "stress": [
+      {
+          "title":"Regulación del estrés",
+          "image":"/images/gatos/product/icon2.png",
+          "text":"La Caseína hidrolizada y el L-triptófano contribuyen a la disminución del estrés ante situaciones que pueden ocasionarlo y ayudan a la regulación de la ansiedad, el sueño y el apetito. "
+      },
+      {
+          "title":"Mayor absorción de nutrientes",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Ofrece la cantidad ideal de fibras naturales y prebióticos que favorecen la salud intestinal, optimizan la absorción de nutrientes y ayudan a eliminar las bolas de pelo. "
+      },
+      {
+          "title":"Óptima actividad mental",
+          "image":"/images/gatos/product/icon3.png",
+          "text":"El EPA y el DHA estimulan el cerebro para mantener una óptima actividad mental. "
+      },
+      {
+          "title":"Salud cutánea",
+          "image":"/images/gatos/product/icon4.png",
+          "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+      },
+      {
+          "title":"Vitalidad celular ",
+          "image":"/images/gatos/product/icon5.png",
+          "text":"Debido a su acción antioxidante, el complejo sinérgico Vitamina C + Selenio Orgánico ayuda a retardar los signos del envejecimiento. "
+      }
+    ]
+}

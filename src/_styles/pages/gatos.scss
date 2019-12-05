@@ -28,6 +28,25 @@
                 display: block;
             }
         }
+
+        &__arrow-down {
+          border: 2px solid $white;
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          outline: none;
+          text-decoration: none;
+          position: absolute;
+          bottom: 20%;
+          right: 20%;
+
+            i {
+                color: $white;
+            }
+        }
     }
 
     &__productos {
@@ -307,10 +326,15 @@
             margin-bottom: 10px;
             color: $blue;
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 24px;
+            line-height: 1.1;
             
             @include mq(md) {
-                font-size: 40px;
+                font-size: 36px;
+            }
+
+            span {
+              font-size: 0.7em;
             }
         }
 
@@ -504,6 +528,7 @@
             padding: 20px 0;
             cursor: pointer;
 
+            &:hover,
             &.-active {
                 background: $blue;
                 padding-left: 20px;
@@ -513,19 +538,10 @@
                     &__address-text,
                     &__subtitle {
                         color: $white;
-                    }
-                }
-            }
 
-            &:hover {
-                background: $blue;
-                padding-left: 20px;
-
-                #{$g}__location {
-                    &__address-title,
-                    &__address-text,
-                    &__subtitle {
-                        color: $white;
+                        a {
+                          color: $white;
+                        }
                     }
                 }
             }
@@ -551,6 +567,10 @@
             font-size: 14px;
             font-weight: 500;
             display: block;
+
+            i {
+              margin-right: 5px;
+            }
 
             &:last-child {
                 margin-bottom: 0;

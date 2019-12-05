@@ -224,7 +224,19 @@ var Header = function() {
             }
         }
     });
-    console.log($(window).width())
+    console.log($(window).width());
+
+    function assignCatLogo() {
+      if(window.location.pathname.indexOf('gato') > -1) {
+        var logoLight = $('.header__logo .-light');
+        var logoDark = $('.header__logo .-dark');
+
+        logoLight.attr('src', '/images/logo-header-katze-light.svg');
+        logoDark.attr('src', '/images/logo-header-katze-dark.svg');
+      }
+    }
+
+    assignCatLogo();
 };
 
 module.exports = Header;

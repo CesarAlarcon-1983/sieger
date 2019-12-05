@@ -9,21 +9,20 @@ block config
 block content
  main.perros
     section.perros__hero
-        iframe(src="https://www.youtube.com/embed/59bpfFRD6Ag?autoplay=1&playlist=roXI-ZIkHxo&loop=1&controls=0&mute=1&showinfo=0")
-    section.perros__productos
+        iframe(src="https://www.youtube.com/embed/LxszdgcVrP0?autoplay=1&controls=0&loop=1&mute=1&playlist=LxszdgcVrP0&showinfo=0&modestbranding=1&autohide=1")
+        a.perros__hero__arrow-down(href="#productos") 
+            i.fa.fa-arrow-down
+    section.perros__productos#productos
         .perros__productos__options
             .perros__productos__option.-js-supermenu
-                button.perros__productos__button cachorro
+                button.perros__productos__button cachorros
                 ul.perros__productos__sublist
                     li
                         .perros__productos__suboption
                             button.perros__productos__subbutton.-js-option estructura pequeña
                     li
                         .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura mediana
-                    li
-                        .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura grande
+                            button.perros__productos__subbutton.-js-option estructura mediana y grande
             .perros__productos__option.-js-supermenu
                 button.perros__productos__button Adultos
                 ul.perros__productos__sublist.perros__productos__sublist--xs-positioning
@@ -32,206 +31,203 @@ block content
                             button.perros__productos__subbutton.-js-option estructura pequeña
                     li
                         .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura mediana
-                    li
-                        .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura grande
+                            button.perros__productos__subbutton.-js-option estructura mediana y grande
             .perros__productos__option.-js-supermenu
-                button.perros__productos__button senior + 7 años
+                button.perros__productos__button senior
                 ul.perros__productos__sublist.perros__productos__sublist--xs-top-positioning
                     li
                         .perros__productos__suboption
                             button.perros__productos__subbutton.-js-option estructura pequeña
                     li
                         .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura mediana
-                    li
-                        .perros__productos__suboption
-                            button.perros__productos__subbutton.-js-option estructura grande
+                            button.perros__productos__subbutton.-js-option estructura mediana y grande
             .perros__productos__option.-js-option
                 button.perros__productos__button light
             .perros__productos__option.-js-option
                 button.perros__productos__button dermaprotect
             .perros__productos__option.-js-option
                 button.perros__productos__button criadores
-            .perros__productos__option.-js-option
-                button.perros__productos__button suplementos
+            .perros__productos__option.-js-supermenu
+                button.perros__productos__button Sieger Ultra
+                ul.perros__productos__sublist.perros__productos__sublist--xs-top-positioning
+                    li
+                        .perros__productos__suboption
+                            button.perros__productos__subbutton.-js-option Vita Plus
+                    li
+                        .perros__productos__suboption
+                            button.perros__productos__subbutton.-js-option Osteoarticular
+                    li
+                        .perros__productos__suboption
+                            button.perros__productos__subbutton.-js-option Mash Puppy’s
+        
+        
         .perros__productos__slider
             .perros__productos__slider-controls
                 span.arrow-left
                     i.fa.fa-arrow-left
                 span.arrow-right
                     i.fa.fa-arrow-right
+ 
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/sieger-puppys-mp.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") cachorros <br> <span>estructura pequeña</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Cachorros Mordida Pequeña refuerza las defensas naturales del organismo, colaborando con un desarrollo saludable.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/cachorro-mordida-pequena/" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-cachorros-peq.jpg")
 
             .perros__productos__slide.-js-slide
                 .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
+                    img(src="/images/packs/sieger-puppys.png")
                 .perros__productos__slide-container
                     .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") cachorros <br> estructura pequeña
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") cachorros <br> <span>estructura mediana y grande</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Cachorros refuerza las defensas naturales del organismo, colaborando con un desarrollo saludable.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/cachorro/" data-wow-delay=".6s") conocé más
                 .perros__productos__slide-container
                     .perros__productos__container-image
-                        img(src="/images/perros/tabs-bg.jpg")
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-cachorros-med.jpg")
+        
+
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/sieger-adult-mp.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adultos <br> <span>estructura pequeña</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Adultos Mordida Pequeña contribuye al óptimo funcionamiento de los sistemas naturales de protección del organismo.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/adulto-mordida-pequena" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-adults-peq.jpg")
+
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/sieger-adult.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adultos <br> <span>estructura mediana y grande</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Adultos contribuye al óptimo funcionamiento de los sistemas naturales de protección del organismo.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/adulto/" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-adults-mediana.jpg")
+        
+
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/sieger-senior-mp.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior +7 años <br> <span>estructura pequeña</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Senior Mordida Pequeña favorece una óptima calidad y expectativa de vida.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/senior-mordida-pequena" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-senior-peq.jpg")
+
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/sieger-senior.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior +7 años <br> <span>estructura mediana y grande</span>
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Senior favorece una óptima calidad y expectativa de vida.					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/senior" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-senior-mediana.jpg")
         
             .perros__productos__slide.-js-slide
                 .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
+                    img(src="/images/packs/sieger-light.png")
                 .perros__productos__slide-container
                     .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") cachorros <br> estructura mediana
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/perros/tabs-bg.jpg")
-
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") cachorros <br> estructura grande
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/perros/tabs-bg.jpg")
-
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adultos <br> estructura pequeña
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-        
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adultos <br> estructura mediana
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") adultos <br> estructura grande
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-        
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior +7 años <br> estructura pequeña
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-        
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior +7 años <br> estructura mediana
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") senior +7 años <br> estructura grande
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
-                .perros__productos__slide-container
-                    .perros__productos__container-image
-                        img(src="/images/gatos/tabs-bg.jpg")
-
-            .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
-                .perros__productos__slide-container
-                    .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
                         h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") light
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Light favorece un descenso de peso saludable, ayudando a alcanzar la condición corporal ideal. 					
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/light" data-wow-delay=".6s") conocé más
                 .perros__productos__slide-container
                     .perros__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-light.jpg")
         
             .perros__productos__slide.-js-slide
                 .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
+                    img(src="/images/packs/sieger-dermaprotect.png")
                 .perros__productos__slide-container
                     .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
                         h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") dermaprotect
                         p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/dermaprotect" data-wow-delay=".6s") conocé más
                 .perros__productos__slide-container
                     .perros__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-derma.jpg")
 
             .perros__productos__slide.-js-slide
                 .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
+                    img(src="/images/packs/sieger-criadores.png")
                 .perros__productos__slide-container
                     .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
                         h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") criadores
-                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Sieger Criadores ofrece una fórmula ideal para los casos donde conviven perros de diferentes estructuras y etapas de vida
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/criadores" data-wow-delay=".6s") conocé más
                 .perros__productos__slide-container
                     .perros__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-criadores.jpg")
     
             .perros__productos__slide.-js-slide
-                .perros__productos__slide-image
-                    img(src="/images/perros/tabs-product.png")
+                .perros__productos__slide-image.perros__productos__slide-image--box
+                    img(src="/images/packs/ultra-vitaplus.png")
                 .perros__productos__slide-container
                     .perros__productos__slide-content
-                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Productos para perros 
-                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") suplementos
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Sieger Ultra Vita Plus
                         p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro" data-wow-delay=".6s") conocé más
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/ultra-vita-plus" data-wow-delay=".6s") conocé más
                 .perros__productos__slide-container
                     .perros__productos__container-image
-                        img(src="https://picsum.photos/id/236/1200/1300")
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-ultra-vita-plus.jpg")
 
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image.perros__productos__slide-image--box
+                    img(src="/images/packs/ultra-osteoarticular.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Sieger Ultra Osteoarticular
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/ultra-osteoarticular" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-osteo.jpg")
+
+            .perros__productos__slide.-js-slide
+                .perros__productos__slide-image
+                    img(src="/images/packs/ultra-mash-puppys.png")
+                .perros__productos__slide-container
+                    .perros__productos__slide-content
+                        h3.perros__productos__slide-subtitle.wow.fadeInLeft Alimento para perros 
+                        h2.perros__productos__slide-title.wow.fadeInLeft(data-wow-delay=".3s") Sieger Ultra Mash Puppy’s
+                        p.perros__productos__slide-text.wow.fadeInLeft(data-wow-delay=".3s") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        a.perros__productos__slide-button.wow.fadeInLeft(href="/producto-perro/ultra-mash-puppy" data-wow-delay=".6s") conocé más
+                .perros__productos__slide-container
+                    .perros__productos__container-image
+                        img(src="/images/perros-vertical-pre-producto/tabs-bg-ultra-mash-puppies.jpg")
+
+    
+    
     section.perros__consejos
         .perros__consejos__container
             +consejo('/images/consejos/sample1.jpg', 'Consejos', 'consejos para el primer día en casa')
@@ -246,30 +242,42 @@ block content
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.555277989878!2d-58.37641601224866!3d-34.61540553430556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5c05ca985%3A0x58ed0e3e91c74dc8!2sChacabuco%20589%2C%20C1069AAK%20CABA!5e0!3m2!1ses-419!2sar!4v1568759145139!5m2!1ses-419!2sar")
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.195475960974!2d-58.44543478423624!3d-34.62450016610618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca39cd8f9d9b%3A0x907923965b494413!2sEmilio%20Mitre%20232%2C%20C1424AYF%20CABA!5e0!3m2!1ses-419!2sar!4v1568826041578!5m2!1ses-419!2sar")
         .perros__location__container
-            h2.perros__location__title donde comprar
+            h2.perros__location__title dónde comprar
             .perros__location__input-wrapper
                 i.fa.fa-search
                 input.perros__location__input(placeholder="Dirección, Ciudad, Código Postal")
             p.perros__location__text cerca tuyo
             .perros__location__addresses
-                a.perros__location__address.-js-location(href="#location")
+                .perros__location__address.-js-location(href="#location")
                     h3.perros__location__address-title san jorge
                     p.perros__location__address-text Emilio Mitre 232, Villa Sarmiento
                     p.perros__location__address-text Buenos Aires
                     p.perros__location__address-text 4464 2432
+                    p.perros__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.perros__location__subtitle horario de atención
                     p.perros__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.perros__location__address.-js-location(href="#location")
-                    h3.perros__location__address-title como perros y gatos
+                .perros__location__address.-js-location(href="#location")
+                    h3.perros__location__address-title como perros y perros
                     p.perros__location__address-text Chacabuco 589, Retiro
                     p.perros__location__address-text Buenos Aires
                     p.perros__location__address-text 4464 2432
+                    p.perros__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.perros__location__subtitle horario de atención
                     p.perros__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs
-                a.perros__location__address.-js-location(href="#location")
+                .perros__location__address.-js-location(href="#location")
                     h3.perros__location__address-title ferreriro hermanos
                     p.perros__location__address-text Emilio Mitre 232, Puerto Madero
                     p.perros__location__address-text CABA
                     p.perros__location__address-text 4464 2432
+                    p.perros__location__address-text
+                      a(href="#")
+                        i.fa.fa-globe 
+                        | Compra online
                     h4.perros__location__subtitle horario de atención
                     p.perros__location__address-text Lun - Vie 9 a 20 hs / Sab - Dom 9 a 13 hs

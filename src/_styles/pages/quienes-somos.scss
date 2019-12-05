@@ -73,7 +73,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            padding-bottom: 100%;
+            padding-bottom: 35%;
             height: 0;
 
             @include mq(md) {
@@ -131,15 +131,18 @@
 
     &__investigacion,
     &__calidad {
+      margin-bottom: 40px;
+
         @include mq(md) {
             height: 50vw;
             display: flex;
+            margin-bottom: 0;
         }
 
         &__container {
             position: relative;
             overflow: hidden;
-            height: 50vh;
+            //height: 50vh;
             
             @include mq(md) {
                 width: 50%;
@@ -147,7 +150,7 @@
             }
 
             .container {
-                height: 50vh;
+                //height: 50vh;
 
                 @include mq(md) {
                     height: auto;
@@ -166,11 +169,19 @@
                     }
                 }
             }
+
+            &--image{
+              height: 50vh;
+
+              @include mq(md) {
+                height: 100%;
+              }
+            }
         }
 
         .row,
         .col-24 {
-            height: 50vh;
+            //height: 50vh;
 
             @include mq(md) {
                 height: auto;
@@ -208,6 +219,7 @@
             color: $darkestGray;
             margin: 0;
             font-weight: 300;
+            margin-bottom: 20px;
             
             @include mq(md) {
                 font-size: 20px;
@@ -215,6 +227,10 @@
 
             span {
                 font-weight: 700;
+            }
+
+            &--bold {
+              font-weight: 500;
             }
         }
 

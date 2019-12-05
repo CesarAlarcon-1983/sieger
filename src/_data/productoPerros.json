@@ -1,27 +1,245 @@
-[   
-    {
-        "title":"Cordero y arroz",
-        "image":"/images/perros/product/icon1.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
-    },
+{
+  "cachorro":[
+      {
+          "title":"Favorece el desarrollo cognitivo",
+          "image":"/images/perros/product/icon2.png",
+          "text":"El DHA es un ácido graso de cadena larga que nutre y estimula el desarrollo del cerebro y la retina, y promueve el proceso de aprendizaje."
+      },
+      {
+          "title":"Mayor protección inmunológica",
+          "image":"/images/perros/product/icon3.png",
+          "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo. "
+      },
+      {
+          "title":"Huesos y dientes fuertes",
+          "image":"/images/perros/product/icon4.png",
+          "text":"El balance adecuado de Calcio y Fósforo en la alimentación es de suma importancia para la formación de huesos y dientes fuertes."
+      },
+      {
+          "title":"Músculos fuertes y sanos",
+          "image":"/images/perros/product/icon5.png",
+          "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que desarrollan una masa muscular magra y fuerte. "
+      },
+      {
+        "title":"Salud cutánea",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+      }
+  ],
+  "adultos":[
+      {
+          "title":"Salud osteoarticular",
+          "image":"/images/perros/product/icon2.png",
+          "text":"La inclusión de Condroitín sulfato y Glucosamina promueve la hidratación y regeneración del cartílago, ayudando a mantener la salud osteoarticular."
+      },
+      {
+          "title":"Músculos fuertes y sanos",
+          "image":"/images/perros/product/icon3.png",
+          "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que generan una masa muscular más fuerte."
+      },
+      {
+          "title":"Mayor protección inmunológica",
+          "image":"/images/perros/product/icon4.png",
+          "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo."
+      },
+      {
+          "title":"Óptima condición corporal",
+          "image":"/images/perros/product/icon5.png",
+          "text":"La L-Carnitina actúa sobre el metabolismo de los ácidos grasos, disminuyendo la formación de tejido adiposo. "
+      },
+      {
+        "title":"Salud cutánea",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+      }
+  ],
+  "senior":[
     {
         "title":"Salud osteoarticular",
         "image":"/images/perros/product/icon2.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
+        "text":"La inclusión de Condroitín sulfato y Glucosamina promueve la hidratación y regeneración del cartílago, ayudando a mantener la salud osteoarticular."
     },
     {
-        "title":"Salud cutanea",
+        "title":"Vitalidad celular",
         "image":"/images/perros/product/icon3.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
+        "text":"Debido a su acción antioxidante, el complejo sinérgico Vitamina C + Selenio Orgánico ayuda a retardar los signos del envejecimiento."
     },
     {
-        "title":"Sistema inmunológico",
+        "title":"Mayor protección inmunológica",
         "image":"/images/perros/product/icon4.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
+        "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo."
     },
     {
-        "title":"Salud digestiva",
+        "title":"Músculos fuertes y sanos",
         "image":"/images/perros/product/icon5.png",
-        "text":"Contribuye a la protección y restauración de la piel sensible"
+        "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que generan una masa muscular más fuerte."
+    },
+    {
+      "title":"Salud cutánea",
+      "image":"/images/perros/product/icon5.png",
+      "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
     }
-]
+  ],
+  "light":[
+    {
+        "title":"Descenso de peso saludable",
+        "image":"/images/perros/product/icon2.png",
+        "text":"La fibras y prebióticos utilizados, poseen propiedades nutricionales y preventivas, que favorecen la salud intestinal, aumentan la saciedad y aceleran el tracto gastrointestinal."
+    },
+    {
+        "title":"Transformación de grasa en energía",
+        "image":"/images/perros/product/icon3.png",
+        "text":"La L-Carnitina actúa sobre el metabolismo de los ácidos grasos, disminuyendo la formación de tejido adiposo."
+    },
+    {
+        "title":"Músculos fuertes y sanos",
+        "image":"/images/perros/product/icon4.png",
+        "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que generan una masa muscular magra."
+    },
+    {
+        "title":"Mayor protección inmunológica",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo."
+    },
+    {
+      "title":"Salud osteoarticular",
+      "image":"/images/perros/product/icon5.png",
+      "text":"La inclusión de condroitín sulfato y glucosamina promueve la hidratación y regeneración del cartílago, ayudando a mantener la salud osteoarticular."
+    }
+  ],
+  "criadores":[
+    {
+        "title":"Nutrición integral",
+        "image":"/images/perros/product/icon2.png",
+        "text":"La variada combinación de nutrientes favorece el cuidado integral del organismo del perro."
+    },
+    {
+        "title":"Músculos fuertes y sanos",
+        "image":"/images/perros/product/icon3.png",
+        "text":"Las proteínas de alta digestibilidad se asimilan fácilmente, colaborando en la sÍntesis de nuevas miofibrillas que generan una masa muscular magra."
+    },
+    {
+        "title":"Salud osteoarticular",
+        "image":"/images/perros/product/icon4.png",
+        "text":"La inclusión de Condroitín sulfato y Glucosamina promueve la hidratación y regeneración del cartílago, ayudando a mantener la salud osteoarticular."
+    },
+    {
+        "title":"Salud cutánea",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los ácidos grasos Omega 3 y 6 refuerzan la integridad de la barrera cutánea, mejoran el brillo del pelo y poseen una potente acción antinflamatoria. "
+    },
+    {
+      "title":"Mayor protección inmunológica",
+      "image":"/images/perros/product/icon5.png",
+      "text":"Los prebióticos MOS y FOS promueven el desarrollo de una flora bacteriana saludable, fortaleciendo las defensas naturales del organismo. "
+    }
+  ],
+  "mashpuppys":[
+    {
+        "title":"Desarrollo cognitivo",
+        "image":"/images/perros/product/icon1.png",
+        "text":"El DHA favorece un óptimo proceso de aprendizaje en la primera etapa de vida"
+    },
+    {
+        "title":"Óptima salud digestiva",
+        "image":"/images/perros/product/icon2.png",
+        "text":"Los prebióticos MOS y FOS contribuyen a un balance adecuado de la flora intestinal, promoviendo el desarrollo de bacterias benéficas"
+    },
+    {
+        "title":"Masa muscular magra",
+        "image":"/images/perros/product/icon3.png",
+        "text":"Su alto contenido proteico favorece el desarrollo de una masa muscular fuerte y magra. "
+    },
+    {
+        "title":"Vitalidad celular",
+        "image":"/images/perros/product/icon4.png",
+        "text":"La Vitamica E y C + Selenio orgánico colaboran para que el sistema nervioso e inmunológico del cachorro se desarrollen de manera saludable. "
+    },
+    {
+        "title":"Huesos y dientes fuertes",
+        "image":"/images/perros/product/icon5.png",
+        "text":"El aporte adecuado de Calcio y Fósforo es de suma importancia para la formación de huesos y dientes fuertes."
+    }
+  ],
+  "vitaplus":[
+    {
+        "title":"Alta densidad energética",
+        "image":"/images/perros/product/icon1.png",
+        "text":"Contiene un alto porcentaje de ácidos grasos esenciales que otorgan energía de rápida disponibilidad."
+    },
+    {
+        "title":"Optimización de las funciones vitales",
+        "image":"/images/perros/product/icon2.png",
+        "text":"Las vitaminas y minerales ayudan a que las funciones vitales del organismo se desarrollen de manera óptima."
+    },
+    {
+        "title":"Protección inmunológica",
+        "image":"/images/perros/product/icon3.png",
+        "text":"El ácido graso Omega 3 refuerza el sistema inmunológico, protegiendo al organismo de posibles agentes extraños. "
+    },
+    {
+        "title":"Regeneración de fibras musculares",
+        "image":"/images/perros/product/icon4.png",
+        "text":"Las proteínas sintetizan las miofibrillas musculares para la regeneración de músculos."
+    },
+    {
+        "title":"Óptima salud digestiva",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los prebióticos MOS y FOS contribuyen a un balance adecuado de la flora intestinal, promoviendo el desarrollo de bacterias benéficas."
+    }
+  ],
+  "osteoarticular":[
+    {
+        "title":"Protección de las articulaciones",
+        "image":"/images/perros/product/icon1.png",
+        "text":"El alto porcentaje de glucosamina y condroitín sulfato contribuye al fortalecimiento de articulaciones y huesos."
+    },
+    {
+        "title":"Vitalidad celular",
+        "image":"/images/perros/product/icon2.png",
+        "text":"El Selenio junto con la Vitamina E y C son antioxidantes naturales que ayudan a mantener la vitalidad celular."
+    },
+    {
+        "title":"Resistencia osteoarticular",
+        "image":"/images/perros/product/icon3.png",
+        "text":"El manganeso favorece la síntesis del tejido conectivo, ayudando a fortalecer las estructuras de sostén del cuerpo."
+    },
+    {
+        "title":"Inhibición de procesos inflamatorios",
+        "image":"/images/perros/product/icon4.png",
+        "text":"Los ácidos grasos Omega 3 atenúan la inflamación de las articulaciones y ayudan a reducir el dolor."
+    },
+    {
+        "title":"Óptima salud digestiva",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Los prebióticos MOS y FOS contribuyen a un balance adecuado de la flora intestinal, promoviendo el desarrollo de bacterias benéficas."
+    }
+  ],
+  "dermaprotect":[
+    {
+        "title":"Cordero y arroz",
+        "image":"/images/perros/product/icon1.png",
+        "text":"Contribuye a la protección y restauración de la piel sensible."
+    },
+    {
+        "title":"Prebióticos (MOS Y FOS)",
+        "image":"/images/perros/product/icon2.png",
+        "text":"Colaboran con el buen funcionamiento del tracto digestivo."
+    },
+    {
+        "title":"Omega 3 y 6",
+        "image":"/images/perros/product/icon3.png",
+        "text":"Mejora la salud de la piel y el brillo del pelo."
+    },
+    {
+        "title":"Vitamina C + Selenio Orgánico",
+        "image":"/images/perros/product/icon4.png",
+        "text":"Antioxidante natural que mantiene la vitalidad celular."
+    },
+    {
+        "title":"Extracto de Yucca y Pulpa de remolacha",
+        "image":"/images/perros/product/icon5.png",
+        "text":"Ayudan a reducir los olores y favorecen la excreción de heces firmes."
+    }
+  ]
+}

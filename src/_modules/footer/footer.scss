@@ -1,5 +1,11 @@
 .footer {
     padding: 40px 0;
+    border-top: 1px solid $lightGray;
+    margin-top: 40px;
+
+    @include mq(md) {
+      border-top: none;
+    }
 
     &__logos {
         display: flex;        
@@ -13,12 +19,13 @@
     &__logo {
         height: 100px;
         width: 100px;
-        margin-right: 20px;
+        margin-right: 50px;
 
         &--alican {
             img {
                 height: 90%;
                 width: auto;
+                max-height: 72px;
             }
         }
     }
@@ -26,14 +33,17 @@
     &__links {
         display: flex;
         margin-bottom: 20px;
-
+        flex-wrap: wrap;
+        
         @include mq(md) {
+            justify-content: space-around;
             margin-bottom: 0;
         }
     }
 
     &__list {
         margin-right: 40px;
+        margin-bottom: 40px;
     }
 
     &__item {
@@ -94,6 +104,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 40px;
 
         span {
             width: 40%;
@@ -103,8 +114,8 @@
 
         &__title {
             margin: 0;
-            height: 100%;
             font-size: 16px;
+            margin-right: 15px;
         }
 
         &__list {

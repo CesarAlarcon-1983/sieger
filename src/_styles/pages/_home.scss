@@ -17,13 +17,13 @@
         iframe {
             display: none;
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%,  0);
+            width: 110%;
+            height: 110%;
             border: 0;
+            pointer-events: none;
 
             @include mq(md) {
                 display: block;
@@ -56,10 +56,10 @@
             font-weight: 300;
             margin: 0;
             margin-bottom: 20px;
-            font-size: 36px;
+            font-size: 21px;
 
             @include mq(md) {
-                font-size: 60px;
+                font-size: 32px;
             }
 
             span {
@@ -253,6 +253,7 @@
             padding: 20px 0;
             cursor: pointer;
 
+            &:hover,
             &.-active {
                 background: $blue;
                 padding-left: 20px;
@@ -262,19 +263,10 @@
                     &__address-text,
                     &__subtitle {
                         color: $white;
-                    }
-                }
-            }
 
-            &:hover {
-                background: $blue;
-                padding-left: 20px;
-
-                #{$h}__location {
-                    &__address-title,
-                    &__address-text,
-                    &__subtitle {
-                        color: $white;
+                        a {
+                          color: $white;
+                        }
                     }
                 }
             }
@@ -303,6 +295,10 @@
 
             &:last-child {
                 margin-bottom: 0;
+            }
+
+            i {
+              margin-right: 5px;
             }
         }
 

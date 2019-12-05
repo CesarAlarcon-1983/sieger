@@ -17,20 +17,24 @@ header.header
                                     if item.sublist
                                         ul.header__sublist
                                             each element in item.sublist
-                                                li.header__subitem
-                                                    a.-js-link(href=element.url)=element.name    
-                                                    if element.subsublist
+                                                if element.subsublist
+                                                    li.header__subitem.header__subitem--submenu
+                                                        a.-js-link(href=element.url)=element.name
                                                         ul.header__subsublist
                                                             each link in element.subsublist
                                                                 li.header__subsubitem.-js-link
                                                                     a.-js-link(href=link.url)=link.name
+                                                else
+                                                    li.header__subitem  
+                                                        a.-js-link(href=element.url)=element.name
+                                                        
                     .header__social-wrapper
                         ul.header__social
                             li.header__network
-                                a(href="#")
-                                    i.fa.fa-facebook-official
+                                a(href="https://www.facebook.com/siegeroficial")
+                                    i.fa.fa-facebook
                             li.header__network
-                                a(href="#")
+                                a(href="http://instagram.com/siegeroficial")
                                     i.fa.fa-instagram
                         .header__hamburguer
                             span

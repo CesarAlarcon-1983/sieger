@@ -3,20 +3,98 @@
     $p: &;
 
     &__hero {
-        background: url('/images/perros/product/hero.jpg') no-repeat center center / cover;
+        //background: url('/images/perros/product/hero.jpg') no-repeat center center / cover;
         width: 100%;
         position: relative;
         padding-top: 50%;
+
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 50%;
+          background: linear-gradient(to top, rgba(0,0,0,.7), transparent);
+        }
 
         @include mq(md) {
             padding-top: 200px;
         }
 
-        &--gatos {
-            background: url('/images/gatos/product/hero.jpg') no-repeat center center / cover;
+        &--perros-adult {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-adults-mediana.jpg') no-repeat center center / cover;
         }
 
-        img {
+        &--perros-adult-mp {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-adults-peq.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-cachorros {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-cachorros-med.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-cachorros-mp {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-cachorros-peq.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-senior {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-senior-mediana.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-senior-mp {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-senior-peq.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-criadores {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-criadores.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-light {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-light.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-derma {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-derma.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-ultra-mash-puppies {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-ultra-mash-puppies.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-ultra-osteo {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-ultra-osteo.jpg') no-repeat center center / cover;
+        }
+
+        &--perros-ultra-vita-plus {
+          background: url('/images/perros-horizontal-ficha-producto/hero-2-ultra-vita-plus.jpg') no-repeat center center / cover;
+        }
+
+        &--gatos-adult {
+            background: url('/images/gatos/product/hero-2-katze-adult.jpg') no-repeat center center / cover;
+        }
+
+        &--gatos-kitten {
+          background: url('/images/gatos/product/hero-2-katze-kitten.jpg') no-repeat center center / cover;
+      }
+
+      &--gatos-senior {
+        background: url('/images/gatos/product/hero-2-katze-senior.jpg') no-repeat center center / cover;
+    }
+
+    &--gatos-light {
+      background: url('/images/gatos/product/hero-2-katze-light.jpg') no-repeat center center / cover;
+  }
+
+  &--gatos-urinary {
+    background: url('/images/gatos/product/hero-2-katze-urinary.jpg') no-repeat center center / cover;
+}
+
+&--gatos-stress {
+  background: url('/images/gatos/product/hero-2-katze-stress-control.jpg') no-repeat center center / cover;
+}
+
+        & > img {
             position: absolute;
             top: calc(50% + 100px);
             left: 50%;
@@ -42,9 +120,7 @@
             @include mq(md) {
                 height: 0;
                 padding-bottom: 100%;
-                overflow: hidden;
                 position: relative;
-
             }
         }
 
@@ -114,6 +190,61 @@
                 border-right: 1px solid $midGray - #333;
             }
         }
+
+        &__back {
+          position: absolute;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          border: 2px solid $white;
+          top: 30%;
+          left:-80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-left: 2px solid $white;
+            border-top: 2px solid $white;
+            transform: rotate(-45deg) translateX(10%);
+          }
+        }
+
+        &__benefit {
+          position: absolute;
+          bottom: 10%;
+          right: 0;
+          transform: translateX(180%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 200px;
+          text-align: center;
+
+          h4{
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: $lightGray;
+          }
+
+          p{ 
+            font-size: 14px;
+            margin: 0;
+            color: $lightGray;
+          }
+
+          img {
+            width: 70px;
+            height: auto;
+            display: block;
+            margin: 0 0 10px;
+          }
+        }
     }
 
     &__interstitial {
@@ -174,7 +305,6 @@
             @include trans;
 
             border-radius: 10px;
-            box-shadow: 0 10px 30px 1px rgba(0,0,0, .15);
             opacity: 0;
             width: 100%;
             padding: 60px 30px;
@@ -267,6 +397,11 @@
                     left: 88%;
                 }
 
+                &:nth-child(6) {
+                    top: 65%;
+                    left: 55%;
+                }
+
                 &.-active {
                     border: 4px solid $red;
                 }
@@ -316,8 +451,8 @@
             align-items: center;
             
             @include mq(md) {
-                padding-left: 100px;
-                width: 25%;
+                padding-left: 30px;
+                width: 30%;
                 margin-bottom: 0;
                 align-items: flex-start;
             }
@@ -411,6 +546,7 @@
             color: $midGray;
             width: 50%;
             font-weight: 500;
+            font-size: 14px;
         }
 
         &__highlights {
