@@ -1,0 +1,48 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-light-pesosaludable.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; light
+                    h2 ¿Qué tener en cuenta para un descenso de peso saludable?
+
+                    p Al igual que las personas, los perros pueden de sobre peso u obesidad y es mucho más frecuente de lo que pensamos. Este trastorno alimentario puede ser la causa de: problemas cardíacos, respiratorios, alteraciones en la piel, fatiga y trastornos digestivos entre otros.
+                    p ¿Por qué se produce? Por un exceso de energía que se transforma en aumento en la acumulación de grasa en el cuerpo y es almacenada como tejido adiposo. Las causas por las que se desencadena pueden ser tres: los hábitos de alimentación, que es la más común, es decir que consume una cantidad mayor de energía de la que consume; factores hereditarios o predisposiciones genéticas (algunas razas parecen ser más susceptibles a la obesidad que otras más atléticas o inquietas); y los desórdenes hormonales.
+                    p La clave para prevenir esto y mantener un peso saludable, es consumir la cantidad de alimento correspondiente a la cantidad que necesita  hacer ejercicio.
+                    p En cuanto a la alimentación, hay que tener en cuenta:
+                    ul
+                        li Reducir la cantidad de alimento balanceado que le servimos (el veterinario es quién le recomendará cuál es la ración adecuada) o cambiarlo por uno con menos calorías. Si elegimos la segunda opción, no hay que hacerlo de manera abrupta ya que puede generar trastornos digestivos.  La manera correcta es realizar la transición a lo largo de entre 7 y 10 días, mezclando el alimento nuevo con el que consume habitualmente y  aumentando gradualmente la proporción a medida que pasan los días hasta reemplazarlo por completo.
+                        li Evitar darles sobras de comida. Mantenerlos fuera del área donde cocinamos y donde comemos evitará que pida o espere recibir comida
+                        li Evitar las grasas y bocados extra, como las golosinas, que tienen muchas calorías.
+                        li Mantener  alejados de tachos de basura o de lugares donde pueda “robar” comida.
+                        li Dejar siempre al lado de la comida un bebedero limpio y con agua fresca 
+                        li Evitar darle complementos vitamínicos, a menos que el veterinario lo recomiende. 
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-light-ejercicio.jpg', 'perros', '¿Cómo empezar a realizar ejercicio?','/consejos/perros/light/como-empezar-a-realizar-ejercicio')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-light-caractalimento.jpg', 'perros', '¿Qué características debe tener un alimento para bajar de peso?','/consejos/perros/light/que-caracteristicas-debe-tener-un-alimento-para-bajar-de-peso')

@@ -1,0 +1,48 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-senior-alimentoespecial.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; senior
+                    h2 Tengo que darle un alimento especial si se le empezaron a caer los dientes?
+
+                    p La higiene a lo largo de la vida de un gato es de suma importancia y disminuirá las probabilidades que se genere sarro. 
+                    p Los problemas dentales constituyen un problema de salud común que 
+                    p La mayoría de las veces es la causa de la aparición de: halitosis (mal aliento), formación de sarro, gingivitis y caries. 
+                    p Los problemas que se desarrollan en la boca pueden influir seriamente en la salud general del gato y podrían hasta llegar a influir en la calidad y esperanza de vida.
+                    p ¿Cómo se forma el sarro?
+                    p La formación de la placa dental, una película formada por restos de comida, saliva y células muertas que se deposita sobre el diente, es ideal para que las bacterias se reproduzcan. La mineralización de la placa es el sarro. 
+                    p ¿Cómo evitarlo?
+                    p El cepillado con una frecuencia alta es la mejor manera para remover la placa dental. Pero muchas veces es una maniobra compleja, por lo que es conveniente generar una rutina desde el comienzo, es decir desde pequeños.
+                    p Una vez que se formó el sarro es muy difícil sacarlo y necesitamos que el veterinario lo haga a través de una limpieza dental.
+                    p Algunos alimentos balanceados, especialmente diseñados y por sus características físicas (tamaño, humedad y textura) pueden colaborar con la salud bucal a través de la función mecánica que ejercen, promoviendo la masticación.
+                    p Por lo que es clave fomentar la masticación y no por el contrario, evitarla, como sería en el caso de remojar el alimento seco. Solo en ciertos casos será conveniente un alimento balanceado húmedo que le facilite su masticación. Pero siempre debemos consultar con nuestro veterinario de confianza qué es más apropiado para nuestra mascota.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-tipsnoactivo.jpg', 'gatos', 'Tips a tener en cuenta si tu gato no está tan activo.','/consejos/gatos/senior/tips-a-tener-en-cuenta-si-tu-gato-no-esta-tan-activo')
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-articulaciones.jpg', 'gatos', 'Cuidado de las articulaciones y huesos.','/consejos/gatos/senior/cuidado-de-las-articulaciones-y-huesos')

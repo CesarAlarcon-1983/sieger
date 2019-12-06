@@ -1,0 +1,46 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-urinary-causasaumentar.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; urinary
+                    h2 Causas que pueden aumentar la probabilidad a la aparición de alteraciones urinarias.
+
+                    p La aparición de diferentes alteraciones urinarias como por ejemplo los cálculos, que luego será la causa del síndrome urológico felino, patología que se da frecuentemente en los gatos y que causa la imposibilidad de orinar debido a que se tapa la uretra. Esta patología se debe a diferentes causas, no a una y son:
+
+                    ul
+                        li Sobrepeso/Obesidad
+                        li El hecho que los gatos no consumen mucha agua, favoreciendo  a que la orina sea muy concentrada 
+                        li Genética
+                        li Castración
+                        li Sedentarismo
+                        li Stress
+
+                    p Es de suma importancia saber que la causa de esta patología es multifactorial, no una sola causa.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-urinary-consumeagua.jpg', 'gatos', '¿Tú gato consume agua?','/consejos/gatos/urinary/tu-gato-consume-agua')

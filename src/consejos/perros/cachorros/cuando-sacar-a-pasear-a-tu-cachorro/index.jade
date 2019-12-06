@@ -1,0 +1,45 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-cachorros-cuandosacar.jpg")
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; cachorros
+                    h2 ¿cuando sacar a pasear a tu cachorro?
+                    p Los cachorros requieren de cuidados especiales y el plan sanitario es una parte fundamental de este. El veterinario indicará los pasos a seguir, ¿cuándo realizar las vacunas y desparasitaciones correspondientes? Y es muy importante que tratemos, en lo posible de respetarlas. De esta manera disminuiremos las probabilidades a posibles enfermedades que puede contraer.
+                    p Una vez que el cachorro tenga todas la vacunas y desparasitaciones correspondientes a su edad y zona en la que viva, podrá comenzar con sus paseos, lo que es clave para lograr una mejor socialización, no solo con otros perros, sino también con otras personas. De las buenas experiencias que haya tenido dependerá de su personalidad a futuro. 
+                    p Lograr una socialización temprana es un proceso de suma importancia que evitará que el perro sea miedoso y agresivo.
+                    p Al principio los paseos deben ser cortos, mostrarles de a poco diferentes lugares y gente para que adquiera confianza. Luego ir sumando el contacto a través del juego con otros perros.
+                    p Debemos siempre respetar los tiempos de cada cachorro, habrá algunos que les será más fácil la adaptación y otros que necesitarán de más tiempo. 
+                    p Dedicarle tiempo, darle mucho afecto, atención y cuidado es la premisa para que en su adultez sea un perro con un temperamento equilibrado.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-banar.jpg', 'perros', 'Consejos para bañar a tu cachorro','/consejos/perros/cachorros/consejos-para-banar-a-tu-cachorro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-edadconsuman.jpg', 'perros', '¿Hasta qué edad es importante que consuman un alimento para cachorros?','/consejos/perros/cachorros/hasta-que-edad-es-importante-que-consuman-un-alimento-para-cachorros')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-destete.jpg', 'perros', 'destete','/consejos/perros/cachorros/destete')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-tipsllegada.jpg', 'perros', 'Tips a tener en cuenta antes que llegue tu cachorro.','/consejos/perros/cachorros/tips-a-tener-en-cuenta-antes-que-llegue-tu-cachorro')

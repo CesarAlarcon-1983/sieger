@@ -1,0 +1,37 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-urinary-consumeagua.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; urinary
+                    h2 ¿Tú gato consume agua?
+
+                    p Los gatos generalmente no suelen consumir mucha cantidad de agua y esto es la primera causa que puede generar alteraciones en el sistema urinario, generando cálculos. Por esto es que es tan importante que incentivemos el consumo de agua en los gatos. ¿Cómo podemos hacerlo? Aportándoles siempre agua fresca y limpia, cuanto más veces en el día se las cambie, esto favorecerá el consumo de agua en tu gato.
+                    p Incluir alimentos húmedos muchas veces ayuda a aumentar la ingesta de agua.
+  
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-urinary-causasaumentar.jpg', 'gatos', 'Causas que pueden aumentar la probabilidad a la aparición de alteraciones urinarias.','/consejos/gatos/urinary/causas-que-pueden-aumentar-la-probabilidad-a-la-aparicion-de-alteraciones-urinarias')

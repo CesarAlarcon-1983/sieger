@@ -1,0 +1,44 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-light-caractalimento.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; light
+                    h2 ¿Qué características debe tener un alimento para bajar de peso?
+
+                    p ¿Cuál es la causa del aumento de peso?
+                    p Un exceso de la cantidad de alimento ingerido, sumado a poca actividad física puede llevar al sobrepeso. 
+                    p Lo primero que hay que saber es si el peso corporal que tiene nuestro perro es el adecuado. 
+                    p ¿Cómo podemos saberlo? La condición corporal ideal es aquella en la que palpamos perfectamente cada una de las costillas, pero no se visualizan. Si no podemos palparlas fácilmente, quiere decir que seguramente esté excedido de peso, por lo que es fundamental consultar con un veterinario, quién lo evaluará y nos podrá decir cuántos kilos deberá bajar para que su peso sea óptimo. 
+                    p La pérdida de peso debe ser gradual, lo ideal es que el descenso por semana no sea mayor al 1% de su peso corporal. Por lo que para esto es clave que el alimento le aporte un contenido alto en proteínas y fibras y bajo en calorías.  
+                    p Determinar los requerimientos energéticos específicos del perro es clave para establecer un plan de descenso saludable de peso. 
+                    p Lo ideal es que el alimento contenga un porcentaje alto de proteínas y fibras y bajo en grasas para que el descenso de peso sea de manera gradual. 
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-light-ejercicio.jpg', 'perros', '¿Cómo empezar a realizar ejercicio?','/consejos/perros/light/como-empezar-a-realizar-ejercicio')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-light-pesosaludable.jpg', 'perros', '¿Qué tener en cuenta para un descenso de peso saludable?','/consejos/perros/light/que-tener-en-cuenta-para-un-descenso-de-peso-saludable')

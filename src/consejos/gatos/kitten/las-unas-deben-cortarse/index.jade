@@ -1,0 +1,39 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-kitten-cortarunas.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; kitten
+                    h2 ¿Las uñas deben cortarse?
+
+                    p Los gatos que tienen acceso al exterior generalmente no requieren que se les corte las uñas, dado que las van desgastando en diferentes superficies rugosas. En cambio los gatos que viven en el interior, sin acceso al exterior no suelen tener un desgaste. Un rascador ayudará a que se mantengan más cortas, pero casi siempre no suele ser suficiente, por lo que quizás haya que cortarlas. Mantener las uñas cortas es fundamental para evitar probables lesiones en la piel e infecciones.
+                    p Parte del cuidado es examinarlas cada 7-10 días y si están largas, es clave  consultar al veterinario que pueda confirmarlo, cortárselas y enseñarlos cómo hacerlo.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-kitten-primerdia.jpg', 'gatos', 'Consejos para el primer día en casa.','/consejos/gatos/kitten/consejos-para-el-primer-dia-en-casa')
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-kitten-dientes.jpg', 'gatos', '¿Es común que se les caigan los dientes?','/consejos/gatos/kitten/es-comun-que-se-les-caigan-los-dientes')

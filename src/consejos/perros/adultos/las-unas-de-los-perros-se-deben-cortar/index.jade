@@ -1,0 +1,41 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-adults-cortarunas.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; adultos
+                    h2 ¿Las unas de los perros se deben cortar?
+                    p No siempre hay que cortarlas, sino cuando al revisarlas notemos que están largas y tocan el piso.
+                    p Los perros que salen a pasear, suelen tener las uñas cortas, dado que el roce con el suelo, genera una acción de “limado” y las va acortando.
+                    p En el caso que veamos que están un poco largas y las tengamos que cortar, podemos hacerlo siempre y en cuanto el veterinario nos asesore cómo es la técnica correcta y con qué. Es fundamental que tu perro se vaya familiarizando con el alicate, ojo que este no es el mismo que el que utilizamos para los humanos.
+                    p Tené en cuenta de cortar un máximo de un milímetro cada vez que lo hagas, colocar la uña a trasluz, en donde se pueda visualizar bien donde comienza la irrigación, es decir la parte que no debemos cortar, será de gran ayuda.
+                    p Buscar el momento indicado, donde tu perro y vos estén lo más tranquilo posible es clave para que la experiencia sea buena y que las próximas veces también lo sean. Siempre mimarlo y hablarle para que se sienta lo más seguro posible. En el caso que sepas que no se va a quedar quieto, buscá ayuda de alguien que pueda sostenerlo para que la maniobra sea segura para ambos.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-cadacuantobanas.jpg', 'perros', '¿Cada cuánto bañas a tu perro?','/consejos/perros/adultos/cada-cuanto-banas-a-tu-perro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-tipsviaje.jpg', 'perros', 'Tips para viajar con tu perro.','/consejos/perros/adultos/tips-para-viajar-con-tu-perro')

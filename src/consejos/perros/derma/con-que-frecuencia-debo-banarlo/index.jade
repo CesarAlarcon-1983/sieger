@@ -1,0 +1,38 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-derma-frecuenciabanado.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; derma
+                    h2 ¿Con qué frecuencia debo bañarlo?
+
+                    p ¿Cuándo debo bañarlo? Todas las semanas, cada dos, una vez al mes? Debemos prestar mucha atención y evitar bañarlos antes del mes o bien cuando vemos que está sucio, es decir que el olor sea desagradable, se vea sucio y sin brillo. El baño frecuente, genera cambios en los microorganismos que se encuentran habitualmente en la piel y promover la reproducción de ciertos microorganismos que generan alteraciones en la piel produciendo como pueden ser el enrojecimiento y el prurito. Por eso debemos evitar bañarlos sino están realmente sucios.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-derma-prurito.jpg', 'perros', '¿Qué produce el prurito en tu perro?','/consejos/perros/derma/que-produce-el-prurito-en-tu-perro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-derma-importanciaalimentacion.jpg', 'perros', '¿Qué importancia tiene la alimentación en el prurito?','/consejos/perros/derma/que-importancia-tiene-la-alimentacion-en-el-prurito')

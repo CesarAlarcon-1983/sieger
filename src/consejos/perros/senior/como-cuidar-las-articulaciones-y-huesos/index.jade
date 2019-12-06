@@ -1,0 +1,39 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-senior-articulaciones.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; senior
+                    h2 ¿Cómo cuidar las articulaciones y huesos?
+                    p Los principales objetivos de la alimentación y los cuidados de los perros mayores de 7 años es poder mantener la salud, un peso corporal óptimo, prevenir y disminuir las probabilidades al desarrollo de eventuales patologías, mejorar la calidad y esperanza de vida. 
+                    p Los nutrientes deben suministrarse en las cantidades apropiadas y manteniendo el balance correcto para el desarrollo óseo óptimo. Los excesos de calcio y energía, junto con el crecimiento rápido, parecen ser los factores predisponentes de ciertos trastornos musculoesqueléticos. De todas maneras el déficit de este mineral también puede ser causa de diferentes patologías. Y es por este motivo que el aporte de un alimento balanceado completo que contenga todos los nutrientes necesarios para esta etapa de vida es de vital importancia.
+                    p Mantenerlo activo todos los días ayudará no solo a las articulaciones y huesos sino también a su estado general. 
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-cuidados.jpg', 'perros', 'Tips de cuidados para tu perro mayor de 7 años.','/consejos/perros/senior/tips-de-cuidados-para-tu-perro-mayor-de-7-anos')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-ejercicio.jpg', 'perros', 'La importancia que tu perro mayor de 7 años realice ejercicio.','/consejos/perros/senior/la-importancia-que-tu-perro-mayor-de-7-anos-realice-ejercicio')
