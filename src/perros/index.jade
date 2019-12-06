@@ -229,13 +229,42 @@ block content
     
     
     section.perros__consejos
-        .perros__consejos__container
-            +consejo('/images/consejos/sample1.jpg', 'Consejos', 'consejos para el primer día en casa')
-        .perros__consejos__container
-            +consejo('/images/consejos/sample2.jpg', 'Consejos', 'consejos para el primer día en casa')
-        .perros__consejos__container
-            +consejo('/images/consejos/sample3.jpg', 'Consejos', 'consejos para el primer día en casa')
-    
+        .perros__consejos__container.wow.fadeInUp
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-cuandosacar.jpg', 'perros', '¿Cuándo sacar a pasear a tu cachorro?', "/consejos/perros/cachorros/cuando-sacar-a-pasear-a-tu-cachorro")
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay=".2s")
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-banar.jpg', 'perros', 'Consejos para bañar a tu cachorro','/consejos/perros/cachorros/consejos-para-banar-a-tu-cachorro')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay=".4s")
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-edadconsuman.jpg', 'perros', '¿Hasta qué edad es importante que consuman un alimento para cachorros?','/consejos/perros/cachorros/hasta-que-edad-es-importante-que-consuman-un-alimento-para-cachorros')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay=".6s")
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-destete.jpg', 'perros', 'destete','/consejos/perros/cachorros/destete')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay=".8s")
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-tipsllegada.jpg', 'perros', 'Tips a tener en cuenta antes que llegue tu cachorro.','/consejos/perros/cachorros/tips-a-tener-en-cuenta-antes-que-llegue-tu-cachorro')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="1s")
+            +consejo('/images/consejos/perros/hero-consejos-adults-cortarunas.jpg', 'perros', '¿las uñas de los perros se deben cortar?','/consejos/perros/adultos/las-unas-de-los-perros-se-deben-cortar')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="1.2s")
+            +consejo('/images/consejos/perros/hero-consejos-adults-cadacuantobanas.jpg', 'perros', '¿Cada cuánto bañas a tu perro?','/consejos/perros/adultos/cada-cuanto-banas-a-tu-perro')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="1.4s")
+            +consejo('/images/consejos/perros/hero-consejos-adults-tipsviaje.jpg', 'perros', 'Tips para viajar con tu perro.','/consejos/perros/adultos/tips-para-viajar-con-tu-perro')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="1.6s")
+            +consejo('/images/consejos/perros/hero-consejos-senior-cuidados.jpg', 'perros', 'Tips de cuidados para tu perro mayor de 7 años.','/consejos/perros/senior/tips-de-cuidados-para-tu-perro-mayor-de-7-anos')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="1.8s")
+            +consejo('/images/consejos/perros/hero-consejos-senior-articulaciones.jpg', 'perros', '¿Cómo cuidar las articulaciones y huesos?','/consejos/perros/senior/como-cuidar-las-articulaciones-y-huesos')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="2s")
+            +consejo('/images/consejos/perros/hero-consejos-senior-ejercicio.jpg', 'perros', 'La importancia que tu perro mayor de 7 años realice ejercicio.','/consejos/perros/senior/la-importancia-que-tu-perro-mayor-de-7-anos-realice-ejercicio')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="2.2s")
+            +consejo('/images/consejos/perros/hero-consejos-light-ejercicio.jpg', 'perros', '¿Cómo empezar a realizar ejercicio?','/consejos/perros/light/como-empezar-a-realizar-ejercicio')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="2.4s")
+            +consejo('/images/consejos/perros/hero-consejos-light-caractalimento.jpg', 'perros', '¿Qué características debe tener un alimento para bajar de peso?','/consejos/perros/light/que-caracteristicas-debe-tener-un-alimento-para-bajar-de-peso')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="2.6s")
+            +consejo('/images/consejos/perros/hero-consejos-light-pesosaludable.jpg', 'perros', '¿Qué tener en cuenta para un descenso de peso saludable?','/consejos/perros/light/que-tener-en-cuenta-para-un-descenso-de-peso-saludable')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="2.8s")
+            +consejo('/images/consejos/perros/hero-consejos-derma-prurito.jpg', 'perros', '¿Qué produce el prurito en tu perro?','/consejos/perros/derma/que-produce-el-prurito-en-tu-perro')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="3s")
+            +consejo('/images/consejos/perros/hero-consejos-derma-frecuenciabanado.jpg', 'perros', '¿Con qué frecuencia debo bañarlo?','/consejos/perros/derma/con-que-frecuencia-debo-banarlo')
+        .perros__consejos__container.wow.fadeInUp(data-wow-delay="3.2s")
+            +consejo('/images/consejos/perros/hero-consejos-derma-importanciaalimentacion.jpg', 'perros', '¿Qué importancia tiene la alimentación en el prurito?','/consejos/perros/derma/que-importancia-tiene-la-alimentacion-en-el-prurito')
+
+
     section.perros__location#location
         .perros__location__container.perros__location__container--double
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.687208327099!2d-58.57069318423594!3d-34.63734396678619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f0dfd44655%3A0xec70ba61af8cf308!2sEmilio%20Mitre%20232%2C%20B1707AMF%20Villa%20Sarmiento%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1568825980657!5m2!1ses-419!2sar")

@@ -22,7 +22,7 @@ block content
                              .producto__hero__content
                                 // h3.producto__hero__subtitle Hasta 12 meses
                                 h2.producto__hero__title Sieger Katze Stress Control
-                                p.producto__hero__text Los gatos suelen ser muy independientes; sin embargo, en determinadas situaciones como cambio de casa, llegada de un nuevo integrante, viajes o fiestas de fin de año, pueden ser sensibles y sufrir estrés. 							
+                                p.producto__hero__text Los gatos suelen ser muy independientes; sin embargo, en determinadas situaciones como cambio de casa, llegada de un nuevo integrante, viajes o fiestas de fin de año, pueden ser sensibles y sufrir estrés.
                                 .producto__hero__wrapper
                                     h3.producto__hero__wrapper-title presentaciones
                                     .producto__hero__group
@@ -208,9 +208,9 @@ block content
                         .producto__descripcion__text Harina de cordero, arroz precocido, maíz precocido, gluten meal, aceite de pollo (fuente de Omega 6), saborizante natural: hidrolizado de menudencias porcinas y aviares, pulpa de remolacha, aceite de pescado (fuente de Omega 3), cloruro de sodio, fructo-oligosacáridos (FOS), colina, L-lisina, DL-Metionina, carbonato de calcio, fosfato monodicálcico, extracto de yucca, antioxidantes naturales (eucalipto, orégano, thymol), betaina, glucosamina, mananoologosacáridos (MOS), condroitín sulfato, vitamina E, antifúngico (propionato de amonio), treonina, sulfato de hierro, metionina de zinc, sulfato de zinc, vitamina C, sulfato de cobre, taurina, nicotinamida, pantotenato de calcio, sulfato manganoso, vitamina A, vitamina B2, vitamina B6, vitamina D3, vitamina B1, vitamina K3, biotina, ácido fólico, vitamina B12, bicarbonato de sodio, iodato de calcio, selenio organico, selenito de sodio.
 
         section.producto__consejos
-            .producto__consejos__container
-                +consejo('/images/consejos/sample1.jpg', 'Consejos', 'consejos para el primer día en casa')
-            .producto__consejos__container
-                +consejo('/images/consejos/sample2.jpg', 'Consejos', 'es comun que se le caigan los dientes')
-            .producto__consejos__container
-                +consejo('/images/consejos/sample3.jpg', 'Consejos', 'las uñas deben cortarse')
+            .producto__consejos__container.wow.fadeInUp
+                +consejo('/images/consejos/gatos/hero-katze-consejos-adult-cepillarse.jpg', 'gatos', '¿Todos los gatos deben cepillarse?','/consejos/gatos/adultos/todos-los-gato-deben-cepillarse')
+            .producto__consejos__container.wow.fadeInUp(data-wow-delay=".2s")
+                +consejo('/images/consejos/gatos/hero-katze-consejos-adult-castracion.jpg', 'gatos', 'Importancia de la esterilización y castración.','/consejos/gatos/adultos/importancia-de-la-esterilizacion-y-castracion')
+            .producto__consejos__container.wow.fadeInUp(data-wow-delay=".4s")
+                +consejo('/images/consejos/gatos/hero-katze-consejos-adult-vacunacion.jpg', 'gatos', '¿Debo vacunarlo todos los años?','/consejos/gatos/adultos/debo-vacunarlo-todos-los-anos')
