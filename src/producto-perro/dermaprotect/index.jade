@@ -207,11 +207,10 @@ block content
                         .producto__descripcion__text Harina de cordero, arroz precocido, maíz precocido, gluten meal, aceite de pollo (fuente de Omega 6), saborizante natural: hidrolizado de menudencias porcinas y aviares, pulpa de remolacha, aceite de pescado (fuente de Omega 3), cloruro de sodio, fructo-oligosacáridos (FOS), colina, L-lisina, DL-Metionina, carbonato de calcio, fosfato monodicálcico, extracto de yucca, antioxidantes naturales (eucalipto, orégano, thymol), betaina, glucosamina, mananoologosacáridos (MOS), condroitín sulfato, vitamina E, antifúngico (propionato de amonio), treonina, sulfato de hierro, metionina de zinc, sulfato de zinc, vitamina C, sulfato de cobre, taurina, nicotinamida, pantotenato de calcio, sulfato manganoso, vitamina A, vitamina B2, vitamina B6, vitamina D3, vitamina B1, vitamina K3, biotina, ácido fólico, vitamina B12, bicarbonato de sodio, iodato de calcio, selenio organico, selenito de sodio.
 
         section.producto__consejos
-            .producto__consejos__container
-                +consejo('/images/consejos/sample1.jpg', 'Consejos', 'que produce el rascado')
-            .producto__consejos__container
-                +consejo('/images/consejos/sample2.jpg', 'Consejos', 'con qué frecuencia debo bañarlo')
-            .producto__consejos__container
-                +consejo('/images/consejos/sample3.jpg', 'Consejos', 'qué importancia tiene la alimentación en el rascado')
-
-      
+            .producto__consejos__container.wow.fadeInUp
+                +consejo('/images/consejos/perros/hero-consejos-derma-prurito.jpg', 'perros', '¿Qué produce el prurito en tu perro?','/consejos/perros/derma/que-produce-el-prurito-en-tu-perro')
+            .producto__consejos__container.wow.fadeInUp(data-wow-delay=".2s")
+                +consejo('/images/consejos/perros/hero-consejos-derma-frecuenciabanado.jpg', 'perros', '¿Con qué frecuencia debo bañarlo?','/consejos/perros/derma/con-que-frecuencia-debo-banarlo')
+            .producto__consejos__container.wow.fadeInUp(data-wow-delay=".4s")
+                +consejo('/images/consejos/perros/hero-consejos-derma-importanciaalimentacion.jpg', 'perros', '¿Qué importancia tiene la alimentación en el prurito?','/consejos/perros/derma/que-importancia-tiene-la-alimentacion-en-el-prurito')
+    

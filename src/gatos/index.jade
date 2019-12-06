@@ -114,13 +114,39 @@ block content
                         img(src="/images/gatos/tabs-bg-katze-stress-control.jpg")
     
     section.gatos__consejos
-        .gatos__consejos__container
-            +consejo('/images/consejos/sample1.jpg', 'Consejos', 'consejos para el primer día en casa')
-        .gatos__consejos__container
-            +consejo('/images/consejos/sample2.jpg', 'Consejos', 'consejos para el primer día en casa')
-        .gatos__consejos__container
-            +consejo('/images/consejos/sample3.jpg', 'Consejos', 'consejos para el primer día en casa')
-    
+        .gatos__consejos__container.wow.fadeInUp
+            +consejo('/images/consejos/gatos/hero-katze-consejos-kitten-primerdia.jpg', 'gatos', 'Consejos para el primer día en casa.','/consejos/gatos/kitten/consejos-para-el-primer-dia-en-casa')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay=".2s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-kitten-dientes.jpg', 'gatos', '¿Es común que se les caigan los dientes?','/consejos/gatos/kitten/es-comun-que-se-les-caigan-los-dientes')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay=".4s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-kitten-cortarunas.jpg', 'gatos', '¿Las uñas deben cortarse?','/consejos/gatos/kitten/las-unas-deben-cortarse')
+
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay=".6s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-adult-cepillarse.jpg', 'gatos', '¿Todos los gatos deben cepillarse?','/consejos/gatos/adultos/todos-los-gato-deben-cepillarse')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay=".8s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-adult-castracion.jpg', 'gatos', 'Importancia de la esterilización y castración.','/consejos/gatos/adultos/importancia-de-la-esterilizacion-y-castracion')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="1s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-adult-vacunacion.jpg', 'gatos', '¿Debo vacunarlo todos los años?','/consejos/gatos/adultos/debo-vacunarlo-todos-los-anos')
+
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="1.2s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-alimentoespecial.jpg', 'gatos', 'Tengo que darle un alimento especial si se le empezaron a caer los dientes?','/consejos/gatos/senior/tengo-que-darle-un-alimento-especial-si-se-le-empezaron-a-caer-los-dientes')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="1.4s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-tipsnoactivo.jpg', 'gatos', 'Tips a tener en cuenta si tu gato no está tan activo.','/consejos/gatos/senior/tips-a-tener-en-cuenta-si-tu-gato-no-esta-tan-activo')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="1.6s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-articulaciones.jpg', 'gatos', 'Cuidado de las articulaciones y huesos.','/consejos/gatos/senior/cuidado-de-las-articulaciones-y-huesos')
+
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="1.8s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-light-tipsperdida.jpg', 'gatos', 'Tips a tener en cuenta para la pérdida de peso saludable.','/consejos/gatos/light/tips-a-tener-en-cuenta-para-la-perdida-de-peso-saludable')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="2s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-light-actividadfisica.jpg', 'gatos', '¿Cómo hacer que tu gato aumente la actividad física?','/consejos/gatos/light/como-hacer-que-tu-gato-aumente-la-actividad-fisica')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="2.2s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-light-sobrepeso.jpg', 'gatos', '¿Cómo saber si tu gato tiene sobrepeso?','/consejos/gatos/light/como-saber-si-tu-gato-tiene-sobrepeso')
+
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="2.4s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-urinary-consumeagua.jpg', 'gatos', '¿Tú gato consume agua?','/consejos/gatos/urinary/tu-gato-consume-agua')
+        .gatos__consejos__container.wow.fadeInUp(data-wow-delay="2.6s")
+            +consejo('/images/consejos/gatos/hero-katze-consejos-urinary-causasaumentar.jpg', 'gatos', 'Causas que pueden aumentar la probabilidad a la aparición de alteraciones urinarias.','/consejos/gatos/urinary/causas-que-pueden-aumentar-la-probabilidad-a-la-aparicion-de-alteraciones-urinarias')
+
     section.gatos__location#location
         .gatos__location__container.gatos__location__container--double
             iframe.-js-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.687208327099!2d-58.57069318423594!3d-34.63734396678619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f0dfd44655%3A0xec70ba61af8cf308!2sEmilio%20Mitre%20232%2C%20B1707AMF%20Villa%20Sarmiento%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1568825980657!5m2!1ses-419!2sar")
