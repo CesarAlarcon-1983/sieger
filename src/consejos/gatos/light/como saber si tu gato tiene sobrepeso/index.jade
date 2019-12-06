@@ -1,0 +1,38 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-light-sobrepeso.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; light
+                    h2 ¿Cómo saber si tu gato tiene sobrepeso?
+
+                    p Para saber si la condición corporal es la adecuada debemos palpar las costillas perfectamente, sin que haya una capa de grasa muy gruesa entre la piel y las costillas. Si lo miro desde arriba se puede apreciar la cintura. En el caso que las costillas no se palpen perfectamente, es decir que hay una capa de grasa gruesa entre las costillas y la piel, indica que existe un grado de sobrepeso y es importante realizar una consulta con el veterinario quién nos confirmará o no el sobrepeso y nos podrá realizar las indicaciones correspondientes del plan de descenso de peso de manera saludable.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-light-tipsperdida.jpg', 'gatos', 'Tips a tener en cuenta para la pérdida de peso saludable.','/consejos/gatos/light/tips a tener en cuenta para la perdida de peso saludable')
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-light-actividadfisica.jpg', 'gatos', '¿Cómo hacer que tu gato aumente la actividad física?','/consejos/gatos/light/como hacer que tu gato aumente la actividad fisica')

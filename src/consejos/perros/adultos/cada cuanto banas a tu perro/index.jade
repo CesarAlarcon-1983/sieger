@@ -1,0 +1,40 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-adults-cadacuantobanas.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; cachorros
+                    h2 ¿Cada cuánto bañas a tu perro?
+                    p Los perros requieren de ciertos cuidados y uno de estos es su higiene. Los baños son necesarios solo cuando realmente estén sucios, es decir que veamos que su pelo no está brilloso y presenta mal olor. Nunca deben tener una frecuencia menor entre ellos de 1 mes. ¿Por qué? Bañarlos muy seguido produce la eliminación de los microorganismos propios de la piel y el pelaje, que promueven la salud de las mismas. 
+                    p Utilizar un shampoo apropiado, según el tipo de piel y pelaje, color y largo 
+                    p Antes de realizar el baño chequear que el ambiente en donde lo bañemos esté a un temperatura cálida para que no tenga frío y que el agua también lo esté si es verano. En invierno tendremos 	que tener en cuenta la temperatura exterior y podemos ponerla un poco más fría, pero nunca fría.
+                    p Para que la experiencia sea la mejor posible debemos estar lo más tranquilos que podamos, muchas veces poner música ayuda. Colocarle algodón en las orejas evitará que pueda entrar agua, para esto debemos tener en cuenta de que el algodón sea grande. Hablarles con calma e ir mojándolos de a poco, una vez que esté completamente mojado, incorporar el shampoo adecuado para ellos. Una vez que les pusimos bien el shampoo en todas partes del cuerpo, menos la cara, cabeza y oídos, comenzamos a sacarles bien el shampoo. En el caso que el perro esté muy sucio, repetir, sino no es necesario. Cuando terminamos de eliminar todo el shampoo, comenzamos a secarlo con toalla lo más que podamos y luego con el secador. Por último no te olvides de sacarles el algodón de las orejas y darle muchos mimos.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-cortarunas.jpg', 'perros', '¿las uñas de los perros se deben cortar?','/consejos/perros/adultos/las unas de los perros se deben cortar')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-tipsviaje.jpg', 'perros', 'Tips para viajar con tu perro.','/consejos/perros/adultos/tips para viajar con tu perro')

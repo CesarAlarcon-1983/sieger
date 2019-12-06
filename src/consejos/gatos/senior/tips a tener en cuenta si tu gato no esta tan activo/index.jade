@@ -1,0 +1,41 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-senior-tipsnoactivo.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; senior
+                    h2 Tips a tener en cuenta si tu gato no está tan activo.
+
+                    p Es normal que el gato a medida que avance en edad lo notes menos activo, que pasa más tiempo durmiendo. Esto no es un signo de que le esté pasando algo, siempre y cuando no pase todo el día durmiendo y esté asociado con otros signos como por ejemplo: coma menos cantidad de alimento o directamente no quiera comer, que lo incentives a jugar y no quiera. Algo que le puede estar pasando es que sienta dolor y por esto es que evite moverse. Para descartar esto y/o cualquier otra cosa que pueda estar generando la baja actividad, es importante consultarlo con el veterinario. 
+                    p Si ya consultaste y está todo bien, entonces es de suma importancia respetar sus horas de descanso. 
+                    p Una alimentación acorde a sus necesidades es fundamental para aumentar la calidad de vida.
+                    p Es clave que pases tiempo con tu gato, los gatos mayores requieren de cuidados extras y es vital que sienta amor y contención.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-alimentoespecial.jpg', 'gatos', 'Tengo que darle un alimento especial si se le empezaron a caer los dientes?','/consejos/gatos/senior/tengo que darle un alimento especial si se le empezaron a caer los dientes')
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-articulaciones.jpg', 'gatos', 'Cuidado de las articulaciones y huesos.','/consejos/gatos/senior/cuidado de las articulaciones y huesos')

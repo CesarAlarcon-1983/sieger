@@ -91,6 +91,7 @@
             padding-bottom: 100px;
             background: $black;
             opacity: 0;
+            pointer-events: none;
 
             img {
                 position: absolute;
@@ -112,6 +113,7 @@
 
             &.-active {
                 opacity: 1;
+                pointer-events: all;
             }
         }
 

@@ -1,0 +1,42 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-cachorros-edadconsuman.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; cachorros
+                    h2 ¿Hasta qué edad es importante que consuman un alimento para cachorros?
+                    p Los cachorros necesitan una nutrición que contenga todos los nutrientes que requiere para crecer de manera saludable y favorecer el óptimo desarrollo. 
+                    p El aporte específico de ciertos nutrientes, como por ejemplo un porcentaje mayor de proteínas y grasas, así como también de vitaminas y minerales, diferente al que necesitan los adultos y/o adultos mayores de 7 años, para favorecer el óptimo crecimiento.                                             
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-cuandosacar.jpg', 'perros', '¿Cuándo sacar a pasear a tu cachorro?', "/consejos/perros/cachorros/cuando sacar a pasear a tu cachorro")
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-banar.jpg', 'perros', 'Consejos para bañar a tu cachorro','/consejos/perros/cachorros/consejos para banar a tu cachorro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-destete.jpg', 'perros', 'destete','/consejos/perros/cachorros/destete')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-tipsllegada.jpg', 'perros', 'Tips a tener en cuenta antes que llegue tu cachorro.','/consejos/perros/cachorros/tips a tener en cuenta antes que llegue tu cachorro')

@@ -1,0 +1,39 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-senior-ejercicio.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; senior
+                    h2 La importancia que tu perro mayor de 7 años realice ejercicio.
+                    p Mantener una vida activa y saludable es primordial y ayudará a mantener una condición corporal adecuada y contribuir a mantener la tonicidad muscular. Un peso saludable ayudarán a evitar que las articulaciones y huesos se vean resentidos.
+                    p El nivel e intensidad del ejercicio debe ajustarse a cada individuo que va a depender de su estado físico general y las indicaciones del médico veterinario.
+                    p Las caminatas diarias entre 20 y 30 minutos pueden llegar a ser una muy buena opción y generalmente suelen ser beneficiosas para todos.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-cuidados.jpg', 'perros', 'Tips de cuidados para tu perro mayor de 7 años.','/consejos/perros/senior/tips de cuidados para tu perro mayor de 7 anos')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-articulaciones.jpg', 'perros', '¿Cómo cuidar las articulaciones y huesos?','/consejos/perros/senior/como cuidar las articulaciones y huesos')

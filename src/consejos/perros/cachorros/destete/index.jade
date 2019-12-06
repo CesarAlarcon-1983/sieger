@@ -1,0 +1,43 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-cachorros-destete.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; cachorros
+                    h2 destete
+                    p La leche materna es el primer alimento ideal para un cachorro porque aporta todos los nutrientes y es por lo tanto el alimento ideal hasta por lo menos los 45 días, donde comienza el destete. Aunque los cachorros están listos para destetarse entre las seis y las ocho semanas de edad, la mayoría empieza a mostrar interés por los alimentos sólidos a las tres o cuatro semanas. A partir de este momento podemos empezar a ofrecerles una fórmula de alimentación específica para ellos. Si elegís una comida seca, al principio es importante añadir agua hasta formar una papilla. En el caso de humedecerlo, es necesario que el cachorro consuma el alimento balanceado dentro de los 30 minutos para evitar que se contamine. 
+                    p Es clave respetar los tiempos de destete y no realizarlo demasiado pronto, ya que cambiar a una alimentación exclusivamente sólida puede perjudicar el sistema digestivo inmaduro del cachorro.
+                    p Por lo que es fundamental que hasta que finalice la etapa de cachorro y comience la de adulto, reciba un alimento para cachorros. ¿Hasta cuándo es esta etapa? Dependerá de la estructura que tenga. En los perros de estructura pequeña será conveniente que consuman este alimento hasta los 12 meses, los de estructura mediana entre los 15 y 18 meses y los de estructura grande hasta los 24 meses. Siempre que tengas dudas es clave consultar con tu veterinario de confianza para que pueda recomendarte la mejor opción para tu cachorro.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+           .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-cuandosacar.jpg', 'perros', '¿Cuándo sacar a pasear a tu cachorro?', "/consejos/perros/cachorros/cuando sacar a pasear a tu cachorro")
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-banar.jpg', 'perros', 'Consejos para bañar a tu cachorro','/consejos/perros/cachorros/consejos para banar a tu cachorro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-edadconsuman.jpg', 'perros', '¿Hasta qué edad es importante que consuman un alimento para cachorros?','/consejos/perros/cachorros/hasta que edad es importante que consuman un alimento para cachorros')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-tipsllegada.jpg', 'perros', 'Tips a tener en cuenta antes que llegue tu cachorro.','/consejos/perros/cachorros/tips a tener en cuenta antes que llegue tu cachorro')

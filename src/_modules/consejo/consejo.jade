@@ -1,7 +1,7 @@
-mixin consejo(image, subtitle, title)
+mixin consejo(image, subtitle, title, url)
     .consejo
         img(src=image)
         .consejo__wrapper
             h4.consejo__subtitle=subtitle
             h3.consejo__title=title
-        a.consejo__button(href="/articulo") leer más
+        a.consejo__button(href=url) leer más

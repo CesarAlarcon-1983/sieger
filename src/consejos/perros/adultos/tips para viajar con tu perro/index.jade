@@ -1,0 +1,62 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-adults-tipsviaje.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; adultos
+                    h2 Tips para viajar con tu perro
+                    p Qué se necesita antes de viajar?
+
+                    ul
+                        li Antes de viajar lo primero que hay que hacer es ir al veterinario para controlar su salud, actualizar las vacunas, desparasitaciones y pipeta
+                        li Collar con identificación en donde figure el celular de contacto
+                        li Es fundamental llevar el alimento balanceado que viene consumiendo para evitar posibles alteraciones gastrointestinales
+                        li Preparar sus cosas: comedero, bebedero, correa, almohadón, colchón o colchoneta en donde duerma, juguetes, etc.
+                        li Conocer las direcciones de las clínicas veterinarias más cercanas y las de urgencia
+                        li Conocer los lugares Pet Friendly 
+                        li En el caso que tu mascota no esté acostumbrada a viajar en auto es conveniente que comiences de a poco con viajes cortos
+                        li En el caso que tu perro se maree en el auto consulta con tu veterinario de confianza acerca de las diferentes alternativas para mejorar este síntoma
+                        li El día del viaje es recomendable no darle de comer 6 horas previas a viajar, si agua
+
+                    p Y durante el viaje debemos tener en cuenta:
+
+                    ul
+                        li 6 horas antes del viaje no darle sólidos, sí agua
+                        li Es de prioridad llevar al perro de manera seguro con una jaula transportadora sujeto con un arnés sujeto al cinturón de seguridad en el asiento trasero
+                        li Nunca llevarlos sueltos y en el asiento de adelante
+                        li Funda protectora para el asiento trasero de tu auto
+                        li Realizar paradas cada 2 a 3 horas para que pueda caminar, hidratarse y hacer sus necesidades
+                        li No dejarlo nunca adentro del auto solo y expuesto al sol
+                        li La temperatura del auto deberá ser la adecuada
+                        li Llevarle algunos juguetes para que se siente más cómodo
+                        li No olvides de tener a tu alcance la correa para cuando realices las paradas
+                        li Si vas a viajar en camioneta no deben viajar en la caja, excepto que vaya en un vari Kennel
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-cortarunas.jpg', 'perros', '¿las uñas de los perros se deben cortar?','/consejos/perros/adultos/las unas de los perros se deben cortar')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-adults-cadacuantobanas.jpg', 'perros', '¿Cada cuánto bañas a tu perro?','/consejos/perros/adultos/cada cuanto banas a tu perro')

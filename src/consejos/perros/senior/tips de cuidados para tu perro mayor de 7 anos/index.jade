@@ -1,0 +1,59 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-senior-cuidados.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; senior
+                    h2 Tips de cuidados para tu perro mayor de 7 años.
+
+                    p A medida que un perro envejece, muchos de los sistemas corporales comienzan a deteriorarse. Inicialmente, este desgaste puede ser asintomático, de podemos no ver dichos cambios, pero eventualmente puede ir observando algunos signos propios del paso del tiempo como por ejemplo:
+                    ul
+                        li Disminución de la función cerebral
+                        li Problemas articulares
+                        li Pérdida de visión y audición 
+                        li Ganancia de peso 
+                        li Debilitamiento muscular 
+                        li Cambios en el tracto digestivo 
+
+                    p Disfunción de algunos órganos tales como riñones, hígado, corazón y/o el sistema endocrino.
+                    p Los cambios en la función cognitiva pueden provocar alteraciones en la calidad de vida del perro; por ejemplo, menor interés en salir al exterior a pasear, jugar con los integrantes de la casa o desorientarse y no saber dónde están o dónde está el comedero.
+                    p ¿Se puede hacer algo para ayudar a prevenir y mejorar la disminución de la función cognitiva?
+                    p Acudir al veterinario para que pueda evaluar y ver si existe algún tipo de tratamiento, indicar una nutrición específica para los cambios metabólicos que ocurren en el cerebro a causa de la edad y te enseñe ejercicios de entrenamiento cerebral.
+                    p Algunos ejercicios de estimulación del cerebro son:
+                    p Estimulación mental a través de juegos, paseos y juguetes, la interacción social con personas y otros perros y gatos.
+                    p Estimulación visual a través de paseos a la calle en donde vea diferentes personas, animales, paisajes, etc. Que tenga acceso a una ventana al exterior también puede ayudar.
+                    p Mayor variedad de objetos para minimizar el aburrimiento. Por ejemplo, cambiando los juguetes y dándole otros nuevos para que mantenga su mente activa.
+                    p Por otro lado, una adecuada nutrición es un aspecto clave para el correcto funcionamiento de los sistemas naturales de protección del perro. Los requerimientos nutricionales varían a lo largo de su vida y es clave proporcionarle el alimento específico y adecuado para él. El gran desafío de los nutricionistas es la creación de fórmulas que contengan ingredientes de la más alta calidad, utilizando tecnologías más innovadoras para satisfacer las necesidades específicas de cada perro en cada etapa de su vida.
+                    p Una equilibrada proporción de proteína y grasa permitirá a los perros mayores de 7 años a mantener la masa muscular magra, promoviendo una conformación corporal ideal. Mientras que la combinación de antioxidantes, vitaminas E y C, los ayudará a combatir el estrés oxidativo relacionado al envejecimiento.
+                    p Por otra parte, la inclusión de fuentes naturales de glucosamina y condroitín sulfato ayuda a mantener las articulaciones sanas y una movilidad óptima.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-articulaciones.jpg', 'perros', '¿Cómo cuidar las articulaciones y huesos?','/consejos/perros/senior/como cuidar las articulaciones y huesos')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-senior-ejercicio.jpg', 'perros', 'La importancia que tu perro mayor de 7 años realice ejercicio.','/consejos/perros/senior/la importancia que tu perro mayor de 7 anos realice ejercicio')
+
+

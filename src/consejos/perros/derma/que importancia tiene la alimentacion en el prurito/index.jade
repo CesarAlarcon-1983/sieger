@@ -1,0 +1,40 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-derma-importanciaalimentacion.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; derma
+                    h2 ¿Qué importancia tiene la alimentación en el prurito?
+
+                    p Existen algunas intolerancias alimentarias a ciertos nutrientes, generalmente las proteínas, que pueden causar diferentes síntomas tanto en la piel como en el sistema digestivo.
+                    p Un diagnóstico acertado es de gran importancia para poder realizar el  tratamiento apropiado y evitar los síntomas que pueden aparecer. Para ellos aconsejamos realizar una consulta con el veterinario quién podrá llegar a la causa y llevar a cabo el tratamiento adecuado.
+                    p Una alimentación específica puede ser clave no solo para evitar la presencia de reacciones como el rascado y lesiones en la piel, sino también ayudar a reducir la inflamación y el dolor. 
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-derma-prurito.jpg', 'perros', '¿Qué produce el prurito en tu perro?','/consejos/perros/derma/que produce el prurito en tu perro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-derma-frecuenciabanado.jpg', 'perros', '¿Con qué frecuencia debo bañarlo?','/consejos/perros/derma/con que frecuencia debo banarlo')

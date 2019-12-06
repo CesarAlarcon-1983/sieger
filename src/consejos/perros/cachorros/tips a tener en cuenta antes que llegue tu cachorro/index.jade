@@ -1,0 +1,52 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/perros/hero-consejos-cachorros-tipsllegada.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 perros &centerdot; cachorros
+                    h2 Tips a tener en cuenta antes que llegue tu cachorro.
+                    p Tener todo preparado antes de su llegada, será un gran paso para que no les falte nada fundamental. 
+                    p Buscar un lugar en la casa en donde pueda estar lo más tranquilo posible, pero al mismo tiempo se sienta acompañado, dado que los primeros días pueden sentirse solos.
+                    p Es primordial que el lugar que elijas tenga su cama, el recipiente para el agua y el comedero. 
+                    p Tener en cuenta que un cachorro es como un bebé curioso que va a tratar de meterse en esos lugares “prohibidos”. Por lo que poner especial cuidado en mantener ocultos los enchufes, cables y productos de limpieza. Algunas plantas pueden ser tóxicas, por lo que consultar con tu veterinario es siempre la mejor opción. 
+                    p Para tener en cuenta:
+
+                    ul
+                        li Cucha, si tu cachorro va a estar en el exterior, una cucha es de primordial importancia para mantenerlo caliente. Un colchón en donde pueda estar cómodo es también necesario. Tener en cuenta a la hora de elegir la cucha que las medidas sean las correspondientes para que pueda moverse con libertad y el material que sea lo más aislante posible para preservar el calor.
+                        li Los comederos y recipientes para el agua, deben ser fáciles de limpiar, por lo que los de acero suelen ser óptimos y evitan la formación de posibles hongos. Que tenga un soporte de goma abajo va a ayudar a que no se puedan dar vuelta y evitar que el agua y la comida termine en el piso.
+                        li Collar, existen diversos tipos y modelos, lo importante es que desde el comienzo le coloques uno con una placa que contenga los datos de contacto. La medida es importante, no debe quedarle ni muy grande, ni muy chico.
+                        li Correa, si bien la vas a necesitar una vez que tu veterinario te dé el alta para comenzar con los paseos, es algo que necesitarás a futuro. Hay diferentes tipos de materiales, más largas, cortas, retráctiles, etc, buscá la que mejor se adapte a vos y tu cachorro. 
+                        li Cepillo, shampoo y corta uñas adecuado, es importante consultar con tu veterinario cuáles son las mejores opciones para tu cachorro.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-cuandosacar.jpg', 'perros', '¿Cuándo sacar a pasear a tu cachorro?', "/consejos/perros/cachorros/cuando sacar a pasear a tu cachorro")
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-banar.jpg', 'perros', 'Consejos para bañar a tu cachorro','/consejos/perros/cachorros/consejos para banar a tu cachorro')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-edadconsuman.jpg', 'perros', '¿Hasta qué edad es importante que consuman un alimento para cachorros?','/consejos/perros/cachorros/hasta que edad es importante que consuman un alimento para cachorros')
+          .articulo__consejos__container
+            +consejo('/images/consejos/perros/hero-consejos-cachorros-destete.jpg', 'perros', 'destete','/consejos/perros/cachorros/destete')

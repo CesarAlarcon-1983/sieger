@@ -1,0 +1,44 @@
+extends ../../../../_layouts/base
+
+include ../../../../_modules/consejo/consejo
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../../../';
+
+
+block content
+  main.articulo
+      section.articulo__hero
+        img(src="/images/consejos/gatos/hero-katze-consejos-senior-articulaciones.jpg")
+
+      section.articulo__content
+          .container
+              .row
+                  .col-24.col-md-14.offset-md-5
+                    h3 gatos &centerdot; senior
+                    h2 Cuidado de las articulaciones y huesos.
+
+                    p A medida que avanzamos en la edad podemos notar ciertos cambios, como por ejemplo: 
+                    p El metabolismo se hace más lento si además esto va acompañado de una disminución de la actividad física, puede ser causa de sobrepeso.
+                    p El sistema inmunológico puede verse disminuido, Por lo que el gato puede estar más propenso a enfermarse. Una alimentación adecuada, que le aporte todos los nutrientes que necesita es clave para fortalecer el sistema inmunológico y evitar enfermedades.
+                    p Algo que tenemos que tener muy en cuenta es que los gatos generalmente no suelen beber mucha agua y en gatos de edad avanzada esto puede verse aumentado, generando deshidratación, por lo que es de suma importancia controlar la cantidad de agua que consumen por día e incentivarlos a tomar más.
+                    p Los huesos y las articulaciones también pueden sufrir cambios, aumentando el riesgo de padecer enfermedades degenerativas y óseas.  
+                    p La inflamación de las articulaciones, suele ser muy frecuente en gatos mayores de 7 años y produce mucho dolor. Esto hace que el gato muchas veces no quiera correr, saltar, trepar o lo haga, pero con dificultad. 
+                    p Cuando presentan dolor, es normal que los gatos prefieran evitar el contacto físico, escondiéndose en lugares inhóspitos y hasta   estén algo huidizos e irritables. Por lo que si notas alguno de estos síntomas es clave consultar con el veterinario lo antes posible para que pueda realizar la evaluación, diagnóstico y tratamiento correspondiente.
+
+                    .articulo__social
+                        .articulo__social__text compartir
+                        ul.articulo__social__list
+                            li
+                                a
+                                    i.fa.fa-facebook-official
+                            li
+                                a
+                                    i.fa.fa-twitter
+
+      section.articulo__consejos
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-alimentoespecial.jpg', 'gatos', 'Tengo que darle un alimento especial si se le empezaron a caer los dientes?','/consejos/gatos/senior/tengo que darle un alimento especial si se le empezaron a caer los dientes')
+          .articulo__consejos__container
+            +consejo('/images/consejos/gatos/hero-katze-consejos-senior-tipsnoactivo.jpg', 'gatos', 'Tips a tener en cuenta si tu gato no está tan activo.','/consejos/gatos/senior/tips a tener en cuenta si tu gato no esta tan activo')
