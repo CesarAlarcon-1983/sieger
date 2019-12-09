@@ -189,7 +189,7 @@
         &__slider {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 130vh;
             overflow: hidden;
 
             @include mq(md) {
@@ -263,14 +263,15 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            min-height: 50vh;
+            justify-content: flex-start;
+            min-height: 80vh;
             width: 100%;
             
             @include mq(md) {
                 width: 50%;
                 min-height: auto;
                 height: 100%;
+                justify-content: center;
             }
             
             img {
@@ -284,21 +285,20 @@
         }
 
         &__slide-image {
-            display: none;
             position: absolute;
             height: 100%;
             left: 50%;
-            top: 0;
+            top: -4%;
             transform: translateX(-50%);
             z-index: 2;
             overflow: hidden;
-            width: 25%;
+            width: 60%;
 
             @include mq(md) {
                 display: block;
+                width: 25%;
+                top: 0;
             }
-
-            
 
             img {
                 position: absolute;
