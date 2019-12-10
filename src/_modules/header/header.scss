@@ -9,6 +9,8 @@
     z-index: 3000;
 
     &.-contacto {
+        background: $white;
+
         .header__item {
             a {
                 @include mq(md) {

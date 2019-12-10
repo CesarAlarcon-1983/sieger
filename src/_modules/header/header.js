@@ -64,6 +64,8 @@ var Header = function() {
     options.on('click', function(e) {
         var index = options.index(this);
 
+        console.log(index);
+
         $('.-js-supermenu').removeClass('-active');
         setActiveContent(options, slides, index, true);
         $(this).parent('.-js-supermenu').addClass('-active');
@@ -72,10 +74,10 @@ var Header = function() {
 
         e.stopPropagation();
 
-        if($(this).parents('.-js-supermenu').length > 0) {
-            $(this).clone(true).insertAfter($(this));
-            $(this).remove();
-        }
+        // if($(this).parents('.-js-supermenu').length > 0) {
+        //     $(this).clone(true).insertAfter($(this));
+        //     $(this).remove();
+        // }
     })
 
     sliderDots.on('click', function() {
@@ -190,6 +192,33 @@ var Header = function() {
     } else {
         viewport = 70;
     } 
+
+    //consejos filters Functionallity
+    var targets = $('[data-target]');
+    var contents = $('[data-content]');
+
+    console.log(targets);
+
+    targets.on('click', function() {
+        var targettedContent = $(this).data("target");
+        console.log(targettedContent);
+
+        if(targettedContent === 'perros') {
+            contents.removeClass('-hidden');
+            $('[data-content="gatos"]').addClass('-hidden');
+        }
+
+        if(targettedContent === 'gatos') {
+            contents.removeClass('-hidden');
+            $('[data-content="perros"]').addClass('-hidden');
+        }
+
+        if(targettedContent === 'all') {
+            contents.removeClass('-hidden');
+        }
+    })
+
+    //Scroll to a div functionallity
 
     $('a[href*="#"]')
     // Remove links that don't actually link to anything

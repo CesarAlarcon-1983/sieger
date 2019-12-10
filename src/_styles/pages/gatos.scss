@@ -258,11 +258,12 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 80vh;
             width: 100%;
             
             @include mq(md) {
+                justify-content: center;
                 width: 50%;
                 min-height: auto;
                 height: 100%;

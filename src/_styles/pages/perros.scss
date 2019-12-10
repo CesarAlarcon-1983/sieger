@@ -66,6 +66,7 @@
     &__productos {
       background: $white;
       position: relative;
+
         &__options {
             display: flex;
             flex-wrap: wrap;
@@ -264,8 +265,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            min-height: 80vh;
             width: 100%;
+            min-height: 80vh;
             
             @include mq(md) {
                 width: 50%;

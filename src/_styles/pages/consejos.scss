@@ -280,6 +280,7 @@
             font-weight: 700;
             font-size: 16px;
             border-radius: 3px;
+            cursor: pointer;
         }
 
         &__select {
@@ -307,6 +308,11 @@
 
             @include mq(md) {
                 width: 33.33%;
+            }
+
+
+            &.-hidden {
+                display: none;
             }
         }
 
