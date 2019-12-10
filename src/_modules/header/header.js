@@ -62,6 +62,7 @@ var Header = function() {
     }) 
 
     options.on('click', function(e) {
+        var options = $('.-js-option');
         var index = options.index(this);
 
         console.log(index);
@@ -74,10 +75,10 @@ var Header = function() {
 
         e.stopPropagation();
 
-        // if($(this).parents('.-js-supermenu').length > 0) {
-        //     $(this).clone(true).insertAfter($(this));
-        //     $(this).remove();
-        // }
+        if($(this).parents('.-js-supermenu').length > 0) {
+            $(this).clone(true).insertAfter($(this));
+            $(this).remove();
+        }
     })
 
     sliderDots.on('click', function() {
